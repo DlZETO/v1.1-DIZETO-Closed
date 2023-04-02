@@ -133,7 +133,7 @@
 
 .button-no-page {
   text-align: center;
-  display: inline-block;
+  display: block;
   height: 35px;
   width: 35px;
 }

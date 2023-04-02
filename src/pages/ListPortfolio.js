@@ -4,6 +4,7 @@ import { BsArrowLeft } from "react-icons/bs";
 import "../css/tailwind.css";
 import "../css/style.css";
 import "../css/lightbox.min.css";
+import Footer from "../components/Footer";
 
 function ListPortfolio() {
   const myData = [
@@ -118,7 +119,7 @@ function ListPortfolio() {
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
-  const perPage = 21;
+  const perPage = 2;
 
   // Menghitung jumlah total halaman
   const totalPages = Math.ceil(myData.length / perPage);
@@ -156,9 +157,12 @@ function ListPortfolio() {
                 - DIZETO -
               </p>
             </div>
-            <div className="pl-20" style={{ width: "max-content" }}>
+            <div
+              className="flex items-center pl-20"
+              style={{ width: "max-content" }}
+            >
               <Link
-                className="button-no-page pt-1 mr-4 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
+                className="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
                 to="/"
               >
                 <BsArrowLeft className="mx-auto my-1" />
@@ -229,14 +233,7 @@ function ListPortfolio() {
           </ul>
         </div>
       </section>
-      {/* Menampilkan data pada halaman aktif */}
-      {/* {currentData.map((item) => (
-        <div key={item.id}>
-          <img src={item.image} alt={item.title} />
-          <h3>{item.title}</h3>
-          <p>{item.category}</p>
-        </div>
-      ))} */}
+      <Footer />
     </>
   );
 }
