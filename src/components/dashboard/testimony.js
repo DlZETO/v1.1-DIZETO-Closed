@@ -1,9 +1,41 @@
+import { BsFillCircleFill, BsQuote } from "react-icons/bs";
+
 function Testimony() {
+  var index = 0;
+  var slides = document.getElementsByClassName("tmslider");
+  var dots = document.getElementsByClassName("icon-dot");
+
+  function showSlide() {
+    if (slides.length === 0 || dots.length === 0) {
+      console.error("Elemen tidak ditemukan!");
+      return;
+    }
+
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.opacity = 0;
+      slides[i].classList.add("hidden");
+      dots[i].classList.remove("active");
+    }
+
+    slides[index].style.opacity = 1;
+    slides[index].classList.remove("hidden");
+    dots[index].classList.add("active");
+    index++;
+
+    if (index >= slides.length) {
+      index = 0;
+    }
+  }
+
+  setInterval(showSlide, 3000);
+
   return (
     <div>
       <div className="container mx-auto px-5">
-        <div className="text-center pt-12">
-          <i className="bi bi-quote text-5xl"></i>
+        <div className="pt-12">
+          <i className="text-5xl">
+            <BsQuote className="mx-auto" />
+          </i>
         </div>
         <div className="tmslider block">
           <div className="flex items-center justify-center py-5">
@@ -62,22 +94,33 @@ function Testimony() {
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <i
-            className="bi bi-dot text-red-600/50 active text-6xl mt-5 mb-10"
-            style={{ marginRight: "-30px" }}
-          ></i>
-          <i
-            className="bi bi-dot text-red-600/50 text-6xl mt-5 mb-10"
-            style={{ marginRight: "-15px" }}
-          ></i>
-          <i
-            className="bi bi-dot text-red-600/50 text-6xl mt-5 mb-10"
-            style={{ marginLeft: "-15px" }}
-          ></i>
-          <i
-            className="bi bi-dot text-red-600/50 text-6xl mt-5 mb-10"
-            style={{ marginLeft: "-30px" }}
-          ></i>
+          <i>
+            <BsFillCircleFill
+              className="icon-dot text-red-600/30 active mt-10 mb-16"
+              size={"12px"}
+            />
+          </i>
+          <i>
+            <BsFillCircleFill
+              className="icon-dot text-red-600/30 mt-10 mb-16"
+              style={{ marginLeft: "15px" }}
+              size={"12px"}
+            />
+          </i>
+          <i>
+            <BsFillCircleFill
+              className="icon-dot text-red-600/30 mt-10 mb-16"
+              style={{ marginLeft: "15px" }}
+              size={"12px"}
+            />
+          </i>
+          <i>
+            <BsFillCircleFill
+              className="icon-dot text-red-600/30 mt-10 mb-16"
+              style={{ marginLeft: "15px" }}
+              size={"12px"}
+            />
+          </i>
         </div>
       </div>
     </div>

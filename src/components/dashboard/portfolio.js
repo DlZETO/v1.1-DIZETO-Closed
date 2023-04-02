@@ -43,7 +43,7 @@ function Portfolio() {
                 >
                   <img
                     className="rounded-sm"
-                    src={`asset/uploads/dashboard/f1/${photo}`}
+                    src={`asset/uploads/dashboard/f1/thumbnail/${photo}`}
                     alt={photo}
                   />
                 </a>

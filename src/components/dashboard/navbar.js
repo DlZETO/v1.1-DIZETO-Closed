@@ -1,3 +1,8 @@
+import React from "react";
+import "../../css/tailwind.css";
+import "../../css/style.css";
+import "../../css/lightbox.min.css";
+
 function Navbar() {
   window.onscroll = function () {
     var aboutSection = document.getElementById("about");
