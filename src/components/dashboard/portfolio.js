@@ -1,3 +1,5 @@
+import React from "react";
+
 function Portfolio() {
   const photos = [
     "DZT_CC77.jpg",
@@ -15,7 +17,7 @@ function Portfolio() {
   ];
 
   return (
-    <div className="bg-white pb-2 md:pb-11">
+    <section id="portfolio" className="bg-white pb-2 md:pb-11">
       <h3 className="pt-2 md:pt-5 font-semibold text-4xl text-center">
         PORTFOL<span className="text-red-600">IO</span>
       </h3>
@@ -52,7 +54,7 @@ function Portfolio() {
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 

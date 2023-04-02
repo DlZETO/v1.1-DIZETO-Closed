@@ -1,6 +1,8 @@
+import React from "react";
+
 function Pricing() {
   return (
-    <div className="bg-white">
+    <section id="pricing" className="bg-white">
       <h3 className="pt-2 md:pt-5 font-semibold text-4xl text-center">
         PRICI<span className="text-red-600">NG</span>
       </h3>
@@ -194,7 +196,7 @@ function Pricing() {
           </button>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 

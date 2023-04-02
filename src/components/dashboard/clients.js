@@ -1,35 +1,9 @@
+import React from "react";
 import { FaRegThumbsUp, FaBriefcase, FaUserAlt } from "react-icons/fa";
 
 function Clients() {
-  const checkTime = (time) => `0${time}`.slice(-2);
-
-  const updateDate = () => {
-    const date = new Date();
-    const day = checkTime(date.getDate());
-    const month = checkTime(date.getMonth() + 1);
-    const year = date.getFullYear();
-    document.getElementById("dttxt").innerHTML = `${day}/${month}/${year}`;
-    setTimeout(updateDate, 500);
-  };
-
-  const updateTime = () => {
-    const date = new Date();
-    const hours = checkTime(date.getHours());
-    const minutes = checkTime(date.getMinutes());
-    const seconds = checkTime(date.getSeconds());
-    document.getElementById(
-      "tmtxt"
-    ).innerHTML = `${hours}:${minutes}:${seconds}`;
-    setTimeout(updateTime, 500);
-  };
-
-  window.onload = () => {
-    updateDate();
-    updateTime();
-  };
-
   return (
-    <div className="bg-gray-100/50">
+    <section id="clients" className="bg-gray-100/50">
       <div className="container mx-auto px-5 py-12 flex items-center justify-center">
         <div className="mx-auto">
           <div className="flex items-center justify-center text-2xl">
@@ -81,7 +55,7 @@ function Clients() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -1,9 +1,10 @@
+import React from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
 
 function Contact() {
   return (
-    <div className="bg-white pb-9">
+    <section id="contact" className="bg-white pb-9">
       <h3 className="pt-2 md:pt-5 font-semibold text-4xl text-center">
         CONTA<span className="text-red-600">CT</span>
       </h3>
@@ -79,7 +80,7 @@ function Contact() {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 

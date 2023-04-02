@@ -1,6 +1,8 @@
+import React from "react";
+
 function About() {
   return (
-    <div className="bg-white">
+    <section id="about" className="bg-white">
       <h3 className="pt-5 font-semibold text-4xl text-center">
         ABO<span className="text-red-600">UT</span>
       </h3>
@@ -31,7 +33,7 @@ function About() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
