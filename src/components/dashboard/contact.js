@@ -20,13 +20,13 @@ function Contact() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
         <ul className="pt-8 text-base">
-          <li className="flex items-center">
-            <i style={{ marginLeft: 3, marginRight: 10 }}>
+          <li className="flex">
+            <i style={{ marginLeft: 3, marginRight: 10, marginTop: 5 }}>
               <FaMapMarkerAlt />
             </i>
             <strong>Address:</strong>
             <a
-              className="hover:text-red-600"
+              className="hover:text-red-600 ml-2"
               href="https://goo.gl/maps/p92HMz8wHBQKFnKd9"
               target="_blank"
               rel="noreferrer"
@@ -35,13 +35,13 @@ function Contact() {
               Barat 40191, Indonesia
             </a>
           </li>
-          <li className="flex items-center pt-2">
-            <i style={{ marginRight: 9, marginLeft: 3 }}>
+          <li className="flex pt-2">
+            <i style={{ marginRight: 9, marginLeft: 3, marginTop: 5 }}>
               <FaEnvelope />
             </i>
             <strong>Email:</strong>
             <a
-              className="hover:text-red-600"
+              className="hover:text-red-600 ml-2"
               href="https://mail.google.com/mail/u/?authuser=dizetobs@gmail.com"
               target="_blank"
               rel="noreferrer"
@@ -49,13 +49,13 @@ function Contact() {
               dizetobs@gmail.com
             </a>
           </li>
-          <li className="flex items-center pt-2">
-            <i style={{ marginRight: 9, marginLeft: 3 }}>
+          <li className="flex pt-2">
+            <i style={{ marginRight: 9, marginLeft: 3, marginTop: 5 }}>
               <FaPhoneAlt />
             </i>
             <strong>Phone:</strong>
             <a
-              className="hover:text-red-600"
+              className="hover:text-red-600 ml-2"
               href="https://wa.link/vnm99c"
               target="_blank"
               rel="noreferrer"
@@ -63,13 +63,13 @@ function Contact() {
               +62 821-1959-6508
             </a>
           </li>
-          <li className="flex items-center pt-2">
-            <i style={{ marginRight: 9, marginLeft: 3 }}>
+          <li className="flex pt-2">
+            <i style={{ marginRight: 9, marginLeft: 3, marginTop: 5 }}>
               <TbWorldWww />
             </i>
             <strong>Website:</strong>
             <a
-              className="hover:text-red-600"
+              className="hover:text-red-600 ml-2"
               href="https://www.dizeto.com"
               target="_blank"
               rel="noreferrer"

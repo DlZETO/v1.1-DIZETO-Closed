@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "../../css/tailwind.css";
 import "../../css/style.css";
 import "../../css/lightbox.min.css";
@@ -22,47 +23,90 @@ function Navbar() {
     <div>
       <div className="py-4">
         <div className="flex items-center">
-          <a href="#top" className="pl-16 scroll">
+          <Link
+            to="top"
+            spy={true}
+            smooth={true}
+            offset={-67}
+            duration={1000}
+            className="pl-16"
+          >
             <img
               style={{ width: "35px", height: "35px" }}
               src="asset/images/logo/dizeto.svg"
               alt="Dizeto Navbar"
             />
-          </a>
+          </Link>
           <div className="mx-auto hidden md:block">
             <ul
               className="flex font-semibold text-base"
               style={{ paddingRight: "99px" }}
             >
               <li className="pr-8 hover:text-red-600">
-                <a className="scroll" href="#about">
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-67}
+                  duration={1000}
+                >
                   About
-                </a>
+                </Link>
               </li>
               <li className="pr-8 hover:text-red-600">
-                <a className="scroll" href="#portfolio">
+                <Link
+                  to="portfolio"
+                  spy={true}
+                  smooth={true}
+                  offset={-67}
+                  duration={1000}
+                >
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li className="pr-8 hover:text-red-600">
-                <a className="scroll" href="#pricing">
+                <Link
+                  to="pricing"
+                  spy={true}
+                  smooth={true}
+                  offset={-67}
+                  duration={1000}
+                >
                   Pricing
-                </a>
+                </Link>
               </li>
               <li className="pr-8 hover:text-red-600">
-                <a className="scroll" href="#testimony">
+                <Link
+                  to="testimony"
+                  spy={true}
+                  smooth={true}
+                  offset={-67}
+                  duration={1000}
+                >
                   Testimony
-                </a>
+                </Link>
               </li>
               <li className="pr-8 hover:text-red-600">
-                <a className="scroll" href="#clients">
+                <Link
+                  to="clients"
+                  spy={true}
+                  smooth={true}
+                  offset={-67}
+                  duration={1000}
+                >
                   Clients
-                </a>
+                </Link>
               </li>
               <li className="hover:text-red-600">
-                <a className="scroll" href="#contact">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-67}
+                  duration={1000}
+                >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
