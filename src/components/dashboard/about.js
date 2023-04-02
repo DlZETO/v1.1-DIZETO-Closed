@@ -1,4 +1,4 @@
-import logo from "../../asset/images/logo/dizeto.svg";
+// import logo from "../../asset/images/logo/dizeto.svg";
 
 function About() {
   return (
@@ -29,7 +29,7 @@ function About() {
             </p>
           </div>
           <div className="logo-about-img my-8 md:my-auto mx-auto">
-            <img src={logo} alt="Dizeto About" />
+            <img src="asset/images/logo/dizeto.svg" alt="Dizeto About" />
           </div>
         </div>
       </div>

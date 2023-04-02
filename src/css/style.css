@@ -15,8 +15,17 @@
   transform: translate(-50%, -50%);
 }
 
+.bg-img-dashboard {
+  background-image: url(/public/asset/images/background/background.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
 .bg-img-testimony {
-  background-image: url(../asset/images/background/background.jpg);
+  background-image: url(/public/asset/images/background/background.jpg);
   background-size: cover;
   height: auto;
   background-repeat: no-repeat;
@@ -24,7 +33,7 @@
 }
 
 .bg-img-portfolio {
-  background-image: url(../asset/images/background/background.jpg);
+  background-image: url(/public/asset/images/background/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

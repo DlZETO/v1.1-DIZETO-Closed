@@ -1,30 +1,17 @@
-import photo1 from "../../asset/uploads/dashboard/f1/DZT_CC77.jpg";
-import photo2 from "../../asset/uploads/dashboard/f1/DZT_CC6.jpg";
-import photo3 from "../../asset/uploads/dashboard/f1/DZT_CC83.jpg";
-import photo4 from "../../asset/uploads/dashboard/f1/DZT_CC86.jpg";
-import photo5 from "../../asset/uploads/dashboard/f1/DZT_CC44.jpg";
-import photo6 from "../../asset/uploads/dashboard/f1/DZT_CC36.jpg";
-import photo7 from "../../asset/uploads/dashboard/f1/DZT_CC74.jpg";
-import photo8 from "../../asset/uploads/dashboard/f1/DZT_CC71.jpg";
-import photo9 from "../../asset/uploads/dashboard/f1/DZT_CC93.jpg";
-import photo10 from "../../asset/uploads/dashboard/f1/DZT_CC88.jpg";
-import photo11 from "../../asset/uploads/dashboard/f1/DZT_CC89.jpg";
-import photo12 from "../../asset/uploads/dashboard/f1/DZT_CC39.jpg";
-
 function Portfolio() {
   const photos = [
-    photo1,
-    photo2,
-    photo3,
-    photo4,
-    photo5,
-    photo6,
-    photo7,
-    photo8,
-    photo9,
-    photo10,
-    photo11,
-    photo12,
+    "DZT_CC77.jpg",
+    "DZT_CC6.jpg",
+    "DZT_CC83.jpg",
+    "DZT_CC86.jpg",
+    "DZT_CC44.jpg",
+    "DZT_CC36.jpg",
+    "DZT_CC74.jpg",
+    "DZT_CC71.jpg",
+    "DZT_CC93.jpg",
+    "DZT_CC88.jpg",
+    "DZT_CC89.jpg",
+    "DZT_CC39.jpg",
   ];
 
   return (
@@ -50,11 +37,15 @@ function Portfolio() {
             >
               <div className="p-1">
                 <a
-                  href={photo}
+                  href={`asset/uploads/dashboard/f1/${photo}`}
                   data-lightbox="dashboart"
                   data-title="&copy; Copyright 2022 - DIZETO"
                 >
-                  <img className="rounded-sm" src={photo} alt={photo} />
+                  <img
+                    className="rounded-sm"
+                    src={`asset/uploads/dashboard/f1/${photo}`}
+                    alt={photo}
+                  />
                 </a>
               </div>
             </li>

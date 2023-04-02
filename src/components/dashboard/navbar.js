@@ -1,6 +1,8 @@
 import "../../css/style.css";
 import "../../css/tailwind.css";
-import logo from "../../asset/images/logo/dizeto.svg";
+// import "../../css/lightbox.min.css";
+// import "../../css/font-awesome.css";
+// import logo from "../../asset/images/logo/dizeto.svg";
 
 function Navbar() {
   window.onscroll = function () {
@@ -24,7 +26,7 @@ function Navbar() {
           <a href="#top" className="pl-16 scroll">
             <img
               style={{ width: "35px", height: "35px" }}
-              src={logo}
+              src="asset/images/logo/dizeto.svg"
               alt="Dizeto Navbar"
             />
           </a>
