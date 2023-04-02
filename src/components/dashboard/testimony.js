@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BsFillCircleFill, BsQuote } from "react-icons/bs";
 
 function Testimony() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const slides = document.querySelectorAll(".tmslider");
+    const dots = document.querySelectorAll(".icon-dot");
+
+    if (slides.length === 0 || dots.length === 0) {
+      console.error("Elemen tidak ditemukan!");
+      return;
+    }
+
+    const showSlide = () => {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.opacity = 0;
+        slides[i].classList.add("hidden");
+        dots[i].classList.remove("active");
+      }
+
+      slides[index].style.opacity = 1;
+      slides[index].classList.remove("hidden");
+      dots[index].classList.add("active");
+      setIndex((index + 1) % slides.length);
+    };
+
+    const intervalId = setInterval(showSlide, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [index]);
+
   return (
     <section id="testimony">
       <div className="container mx-auto px-5">

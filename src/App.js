@@ -2,9 +2,7 @@ import React from "react";
 import "./css/tailwind.css";
 import "./css/style.css";
 import "./css/lightbox.min.css";
-import Navbar from "./components/dashboard/Navbar";
-import Jumbotron from "./components/dashboard/Jumbotron";
-import About from "./components/dashboard/About";
+import Merge from "./components/dashboard/Merge";
 import Portfolio from "./components/dashboard/Portfolio";
 import Pricing from "./components/dashboard/Pricing";
 import Testimony from "./components/dashboard/Testimony";
@@ -18,10 +16,7 @@ function Dashboard() {
   body.setAttribute("class", "bg-img-dashboard");
   return (
     <>
-      <Navbar />
-      <div id="top" className="pb-40"></div>
-      <Jumbotron />
-      <About />
+      <Merge />
       <Portfolio />
       <Pricing />
       <section className="bg-img-testimony bg-scroll">

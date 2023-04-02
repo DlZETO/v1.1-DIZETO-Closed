@@ -1,5 +1,6 @@
 import React from "react";
 import { FaRegThumbsUp, FaBriefcase, FaUserAlt } from "react-icons/fa";
+import DateTime from "./DateTime";
 
 function Clients() {
   return (
@@ -47,7 +48,7 @@ function Clients() {
             style={{ width: "250px" }}
           >
             <p className="text-red-600 font-semibold pb-1">
-              <span id="dttxt"></span> - <span id="tmtxt"></span>
+              <DateTime />
             </p>
           </div>
           <div className="text-center">
