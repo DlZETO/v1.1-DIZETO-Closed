@@ -2,6 +2,20 @@ import React from "react";
 import { Link } from "react-scroll";
 
 function Navbar() {
+  window.onscroll = function () {
+    var aboutSection = document.getElementById("about");
+    var aboutSectionTop = aboutSection.offsetTop;
+    var navbar = document.querySelector("nav");
+    var styles = {
+      transition: "background-color 1s ease-in-out, color 1s ease-in-out",
+      color: window.pageYOffset >= aboutSectionTop - 67 ? "white" : "black",
+      backgroundColor:
+        window.pageYOffset >= aboutSectionTop - 67
+          ? "rgba(0, 0, 0, 0.85)"
+          : "rgba(0, 0, 0, 0)",
+    };
+    Object.assign(navbar.style, styles);
+  };
   return (
     <nav className="z-10 fixed top-0" style={{ width: "100%" }}>
       <div className="py-4">
