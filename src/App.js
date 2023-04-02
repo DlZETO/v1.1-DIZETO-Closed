@@ -16,7 +16,6 @@ import Footer from "./components/Footer";
 function Dashboard() {
   const body = document.getElementById("body");
   body.setAttribute("class", "bg-img-dashboard");
-
   return (
     <>
       <Navbar />
