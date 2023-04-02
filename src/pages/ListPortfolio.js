@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
 import "../css/tailwind.css";
@@ -130,8 +130,14 @@ function ListPortfolio() {
   // Membuat array data yang ditampilkan pada halaman aktif
   const currentData = myData.slice(startIndex, endIndex);
 
-  const body = document.getElementById("body");
-  body.setAttribute("class", "bg-img-portfolio");
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.classList.add("bg-img-portfolio");
+
+    return () => {
+      body.classList.remove("bg-img-portfolio");
+    };
+  }, []);
 
   return (
     <>
@@ -188,7 +194,7 @@ function ListPortfolio() {
           <ul className="grid c-grid-cols gap-5 pb-10">
             {/* Menampilkan data pada halaman aktif */}
             {currentData.map((item) => (
-              <li>
+              <li key={item.id}>
                 <div
                   className="rounded-md bg-white border border-gray-100 hover:border-red-600"
                   style={{ width: "100%", height: "max-content" }}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./css/tailwind.css";
 import "./css/style.css";
 import "./css/lightbox.min.css";
@@ -12,8 +12,15 @@ import Contact from "./components/dashboard/Contact";
 import Footer from "./components/Footer";
 
 function Dashboard() {
-  const body = document.getElementById("body");
-  body.setAttribute("class", "bg-img-dashboard");
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.classList.add("bg-img-dashboard");
+
+    return () => {
+      body.classList.remove("bg-img-dashboard");
+    };
+  }, []);
+
   return (
     <>
       <Merge />
