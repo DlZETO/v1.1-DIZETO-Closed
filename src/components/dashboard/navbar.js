@@ -1,9 +1,3 @@
-import "../../css/style.css";
-import "../../css/tailwind.css";
-// import "../../css/lightbox.min.css";
-// import "../../css/font-awesome.css";
-// import logo from "../../asset/images/logo/dizeto.svg";
-
 function Navbar() {
   window.onscroll = function () {
     var aboutSection = document.getElementById("about");

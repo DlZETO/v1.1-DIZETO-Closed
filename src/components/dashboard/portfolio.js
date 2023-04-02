@@ -15,7 +15,7 @@ function Portfolio() {
   ];
 
   return (
-    <section className="bg-white pb-2 md:pb-11" id="portfolio">
+    <div className="bg-white pb-2 md:pb-11">
       <h3 className="pt-2 md:pt-5 font-semibold text-4xl text-center">
         PORTFOL<span className="text-red-600">IO</span>
       </h3>
@@ -52,7 +52,7 @@ function Portfolio() {
           ))}
         </ul>
       </div>
-    </section>
+    </div>
   );
 }
 

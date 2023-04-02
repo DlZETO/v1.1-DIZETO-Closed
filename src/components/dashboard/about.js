@@ -1,5 +1,3 @@
-// import logo from "../../asset/images/logo/dizeto.svg";
-
 function About() {
   return (
     <div className="bg-white">

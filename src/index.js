@@ -6,6 +6,8 @@ import DashNavbar from "./components/dashboard/navbar";
 import DashJumbotron from "./components/dashboard/jumbotron";
 import DashAbout from "./components/dashboard/about";
 import DashPortfolio from "./components/dashboard/portfolio";
+import DashPricing from "./components/dashboard/pricing";
+import DashTestimony from "./components/dashboard/testimony";
 
 const root = ReactDOM.createRoot(document.getElementById("navbar"));
 root.render(
@@ -34,7 +36,19 @@ portfolio.render(
     <DashPortfolio />
   </React.StrictMode>
 );
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+const pricing = ReactDOM.createRoot(document.getElementById("pricing"));
+pricing.render(
+  <React.StrictMode>
+    <DashPricing />
+  </React.StrictMode>
+);
+
+const testimony = ReactDOM.createRoot(document.getElementById("testimony"));
+testimony.render(
+  <React.StrictMode>
+    <DashTestimony />
+  </React.StrictMode>
+);
+
 reportWebVitals();
