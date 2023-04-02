@@ -119,7 +119,7 @@ function ListPortfolio() {
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
-  const perPage = 2;
+  const perPage = 21;
 
   // Menghitung jumlah total halaman
   const totalPages = Math.ceil(myData.length / perPage);
