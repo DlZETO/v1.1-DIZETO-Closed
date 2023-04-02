@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./css/tailwind.css";
 import "./css/style.css";
 import "./css/lightbox.min.css";
