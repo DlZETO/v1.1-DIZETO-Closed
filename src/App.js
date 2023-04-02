@@ -88,6 +88,9 @@ function Dashboard() {
 
   setInterval(showSlide, 3000);
 
+  const body = document.getElementById("body");
+  body.setAttribute("class", "bg-img-dashboard");
+
   return (
     <>
       <Navbar />

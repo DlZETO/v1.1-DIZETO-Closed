@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Portfolio() {
   const photos = [
@@ -23,12 +24,12 @@ function Portfolio() {
       </h3>
       <div className="red-line-h"></div>
       <div className="flex justify-center">
-        <a
+        <Link
           className="my-4 py-2 px-10 border-2 border-red-600 text-red-600 font-semibold hover:bg-red-600 hover:text-white"
-          href="src/pages/portfolio"
+          to="/list"
         >
           CHECK ALL PORTFOLIO
-        </a>
+        </Link>
       </div>
       <div className="container mx-auto px-5">
         <ul className="dashboart-colum gap-4">
