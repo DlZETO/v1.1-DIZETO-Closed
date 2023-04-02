@@ -142,8 +142,10 @@ function ListPortfolio() {
 
   return (
     <>
-      <div id="top"></div>
-      <section className="container mx-auto px-5">
+      <section
+        className="container mx-auto px-5"
+        style={{ minHeight: "100vh" }}
+      >
         <div className="flex items-center py-10">
           <div
             className="flex items-center"
@@ -194,7 +196,7 @@ function ListPortfolio() {
           </div>
           <div className="red-line-h-portfolio"></div>
         </div>
-        <div style={{ minHeight: "100vh" }}>
+        <div>
           <ul className="grid c-grid-cols gap-5 pb-10">
             {/* Menampilkan data pada halaman aktif */}
             {currentData.map((item) => (
