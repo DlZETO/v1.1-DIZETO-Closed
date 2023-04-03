@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
 import ListPortfolio from "./pages/ListPortfolio";
+import Sec00 from "./pages/Sec00";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/DIZETO-REACT/LIST",
     element: <ListPortfolio />,
+  },
+  {
+    path: "/DIZETO-REACT/LIST/sec00",
+    element: <Sec00 />,
   },
 ]);
 

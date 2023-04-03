@@ -222,12 +222,12 @@ function ListPortfolio() {
                     </h4>
                   </div>
                   <div className="flex justify-center">
-                    <a
+                    <Link
                       className="mb-4 mt-1 py-2 px-10 border-2 border-red-600 text-red-600 font-semibold hover:bg-red-600 hover:text-white"
-                      href="#"
+                      to="/DIZETO-REACT/LIST/sec00"
                     >
                       OPEN
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </li>

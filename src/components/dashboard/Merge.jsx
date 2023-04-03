@@ -173,7 +173,10 @@ function Merge() {
               </p>
             </div>
             <div className="logo-about-img my-8 md:my-auto mx-auto">
-              <img src={require("../../assets/images/logo/dizeto.svg").default} alt="Dizeto About" />
+              <img
+                src={require("../../assets/images/logo/dizeto.svg").default}
+                alt="Dizeto About"
+              />
             </div>
           </div>
         </div>
