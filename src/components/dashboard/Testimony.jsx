@@ -42,7 +42,7 @@ function Testimony() {
         <div className="tmslider block">
           <div className="flex items-center justify-center py-5">
             <img
-              src="asset/images/testimony/person.jpg"
+              src={require("../../assets/images/testimony/person.jpg")}
               className="w-32 rounded-full"
               alt="Testimony"
             />
@@ -56,7 +56,7 @@ function Testimony() {
         <div className="tmslider hidden">
           <div className="flex items-center justify-center py-5">
             <img
-              src="asset/images/testimony/person.jpg"
+              src={require("../../assets/images/testimony/person.jpg")}
               className="w-32 rounded-full"
               alt="Testimony"
             />
@@ -70,7 +70,7 @@ function Testimony() {
         <div className="tmslider hidden">
           <div className="flex items-center justify-center py-5">
             <img
-              src="asset/images/testimony/person.jpg"
+              src={require("../../assets/images/testimony/person.jpg")}
               className="w-32 rounded-full"
               alt="Testimony"
             />
@@ -84,7 +84,7 @@ function Testimony() {
         <div className="tmslider hidden">
           <div className="flex items-center justify-center py-5">
             <img
-              src="asset/images/testimony/person.jpg"
+              src={require("../../assets/images/testimony/person.jpg")}
               className="w-32 rounded-full"
               alt="Testimony"
             />

@@ -10,109 +10,109 @@ function ListPortfolio() {
   const myData = [
     {
       id: 1,
-      image: "asset/uploads/safiy-kitchen/thumbnail/thumbnail.jpg",
+      image: "safiy-kitchen/thumbnail/thumbnail.jpg",
       title: "SAFIY KITCHEN",
       category: "(CONTENT)",
     },
     {
       id: 2,
-      image: "asset/uploads/ginzas-birthday/thumbnail/thumbnail.jpg",
+      image: "ginzas-birthday/thumbnail/thumbnail.jpg",
       title: "GINZA'S BIRTHDAY",
       category: "(DOCUMENTATION)",
     },
     {
       id: 3,
-      image: "asset/uploads/irma-jabar/thumbnail/thumbnail.jpg",
+      image: "irma-jabar/thumbnail/thumbnail.jpg",
       title: "IRMA JABAR",
       category: "(DOCUMENTATION)",
     },
     {
       id: 4,
-      image: "asset/uploads/muhibah-angklung/thumbnail/thumbnail.jpg",
+      image: "muhibah-angklung/thumbnail/thumbnail.jpg",
       title: "MUHIBAH ANGKLUNG",
       category: "(DOCUMENTATION)",
     },
     {
       id: 5,
-      image: "asset/uploads/faizal-graduation/thumbnail/thumbnail.jpg",
+      image: "faizal-graduation/thumbnail/thumbnail.jpg",
       title: "FAIZAL GRADUATION",
       category: "(DOCUMENTATION)",
     },
     {
       id: 6,
-      image: "asset/uploads/mitas-birthday/thumbnail/thumbnail.jpg",
+      image: "mitas-birthday/thumbnail/thumbnail.jpg",
       title: "MITA'S BIRTHDAY",
       category: "(DOCUMENTATION)",
     },
     {
       id: 7,
-      image: "asset/uploads/hkbp-bandung/thumbnail/thumbnail.jpg",
+      image: "hkbp-bandung/thumbnail/thumbnail.jpg",
       title: "HKBP BANDUNG",
       category: "(DOCUMENTATION)",
     },
     {
       id: 8,
-      image: "asset/uploads/ichas-birthday/thumbnail/thumbnail.jpg",
+      image: "ichas-birthday/thumbnail/thumbnail.jpg",
       title: "ICHA'S BIRTHDAY",
       category: "(DOCUMENTATION)",
     },
     {
       id: 9,
-      image: "asset/uploads/sely-hunting/thumbnail/thumbnail.jpg",
+      image: "sely-hunting/thumbnail/thumbnail.jpg",
       title: "SELY",
       category: "(HUNTING)",
     },
     {
       id: 10,
-      image: "asset/uploads/aya-music-cover/thumbnail/thumbnail.jpg",
+      image: "aya-music-cover/thumbnail/thumbnail.jpg",
       title: "AYA",
       category: "(MUSIC COVER)",
     },
     {
       id: 11,
-      image: "asset/uploads/nazla-clothes/thumbnail/thumbnail.jpg",
+      image: "nazla-clothes/thumbnail/thumbnail.jpg",
       title: "NAZLA CLOTHES",
       category: "(PHOTO SHOOT)",
     },
     {
       id: 12,
-      image: "asset/uploads/rosita-prewedding/thumbnail/thumbnail.jpg",
+      image: "rosita-prewedding/thumbnail/thumbnail.jpg",
       title: "ROSITA",
       category: "(PRE-WEDDING)",
     },
     {
       id: 13,
-      image: "asset/uploads/reni-prewedding/thumbnail/thumbnail.jpg",
+      image: "reni-prewedding/thumbnail/thumbnail.jpg",
       title: "RENI",
       category: "(PRE-WEDDING)",
     },
     {
       id: 14,
-      image: "asset/uploads/halim-prewedding/thumbnail/thumbnail.jpg",
+      image: "halim-prewedding/thumbnail/thumbnail.jpg",
       title: "HALIM",
       category: "(PRE-WEDDING)",
     },
     {
       id: 15,
-      image: "asset/uploads/tenang-coffee/thumbnail/thumbnail.jpg",
+      image: "tenang-coffee/thumbnail/thumbnail.jpg",
       title: "TENANG COFFEE",
       category: "(PRODUCT)",
     },
     {
       id: 16,
-      image: "asset/uploads/macaire/thumbnail/thumbnail.jpg",
+      image: "macaire/thumbnail/thumbnail.jpg",
       title: "MACAIRE",
       category: "(PRODUCT)",
     },
     {
       id: 17,
-      image: "asset/uploads/lentera-coffee/thumbnail/thumbnail.jpg",
+      image: "lentera-coffee/thumbnail/thumbnail.jpg",
       title: "LENTERA COFFEE",
       category: "(PRODUCT)",
     },
     {
       id: 18,
-      image: "asset/uploads/rumah-batik-wijaya/thumbnail/thumbnail.jpg",
+      image: "rumah-batik-wijaya/thumbnail/thumbnail.jpg",
       title: "RUMAH BATIK WIJAYA",
       category: "(PRODUCT)",
     },
@@ -165,7 +165,7 @@ function ListPortfolio() {
             >
               <Link
                 className="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
-                to="/DIZETO-REACT/DASHBOARD"
+                to="/DIZETO-REACT"
               >
                 <BsArrowLeft className="mx-auto my-1" />
               </Link>
@@ -208,7 +208,7 @@ function ListPortfolio() {
                   <div className="canvas m-2">
                     <img
                       className="scale-image rounded-md"
-                      src={item.image}
+                      src={require(`../assets/uploads/${item.image}`)}
                       alt={item.title}
                     />
                   </div>

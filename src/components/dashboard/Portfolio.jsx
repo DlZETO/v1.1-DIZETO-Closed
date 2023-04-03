@@ -40,13 +40,13 @@ function Portfolio() {
             >
               <div className="p-1">
                 <a
-                  href={require(`/src/assets/uploads/dashboard/f1/${photo}`).default}
+                  href={require(`../../assets/uploads/dashboard/f1/${photo}`)}
                   data-lightbox="dashboart"
                   data-title="&copy; Copyright 2022 - DIZETO"
                 >
                   <img
                     className="rounded-sm"
-                    src={require(`/src/assets/uploads/dashboard/f1/thumbnail/${photo}`).default}
+                    src={require(`../../assets/uploads/dashboard/f1/thumbnail/${photo}`)}
                     alt={photo}
                   />
                 </a>

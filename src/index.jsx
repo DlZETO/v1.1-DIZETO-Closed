@@ -7,7 +7,7 @@ import ListPortfolio from "./pages/ListPortfolio";
 
 const router = createBrowserRouter([
   {
-    path: "/DIZETO-REACT/DASHBOARD",
+    path: "/DIZETO-REACT",
     element: <App />,
   },
   {
