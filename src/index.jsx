@@ -12,11 +12,11 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/DIZETO-REACT/LIST",
+    path: "/DIZETO-REACT/list",
     element: <ListPortfolio />,
   },
   {
-    path: "/DIZETO-REACT/LIST/sec00",
+    path: "/DIZETO-REACT/LIST/sec01",
     element: <Sec01 />,
   },
 ]);
