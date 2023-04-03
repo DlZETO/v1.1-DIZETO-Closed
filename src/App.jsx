@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Preloader from "./components/Preloader";
 import "./css/tailwind.css";
 import "./css/style.css";
 import "./css/lightbox.min.css";
@@ -23,6 +24,7 @@ function Dashboard() {
 
   return (
     <>
+      <Preloader />
       <Merge />
       <Portfolio />
       <Pricing />

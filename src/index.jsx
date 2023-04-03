@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <ListPortfolio />,
   },
   {
-    path: "/DIZETO-REACT/LIST/sec01",
+    path: "/DIZETO-REACT/list/sec01",
     element: <Sec01 />,
   },
 ]);

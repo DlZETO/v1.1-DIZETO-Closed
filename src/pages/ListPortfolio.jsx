@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
+import Preloader from "../components/Preloader";
 import "../css/tailwind.css";
 import "../css/style.css";
 import "../css/lightbox.min.css";
@@ -142,6 +143,7 @@ function ListPortfolio() {
 
   return (
     <>
+      <Preloader />
       <section
         className="container mx-auto px-5"
         style={{ minHeight: "100vh" }}
@@ -173,22 +175,22 @@ function ListPortfolio() {
                 const pageNumber = index + 1;
                 if (pageNumber === currentPage) {
                   return (
-                    <span
+                    <button
                       key={pageNumber}
-                      className="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold bg-red-600 text-white"
+                      className="button-no-page mr-5 border-2 border-red-600 font-semibold bg-red-600 text-white"
                     >
                       {pageNumber}
-                    </span>
+                    </button>
                   );
                 } else {
                   return (
-                    <span
+                    <button
                       key={pageNumber}
-                      className="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
+                      className="button-no-page mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
                       onClick={() => setCurrentPage(pageNumber)}
                     >
                       {pageNumber}
-                    </span>
+                    </button>
                   );
                 }
               })}
@@ -224,7 +226,7 @@ function ListPortfolio() {
                   <div className="flex justify-center">
                     <Link
                       className="mb-4 mt-1 py-2 px-10 border-2 border-red-600 text-red-600 font-semibold hover:bg-red-600 hover:text-white"
-                      to="/DIZETO-REACT/LIST/sec00"
+                      to="/DIZETO-REACT/list/sec01"
                     >
                       OPEN
                     </Link>

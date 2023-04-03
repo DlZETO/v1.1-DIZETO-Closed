@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Link as Scroll } from "react-scroll";
 import { BsArrowLeft } from "react-icons/bs";
+import Preloader from "../components/Preloader";
 import "../css/tailwind.css";
 import "../css/style.css";
 import "../css/lightbox.min.css";
@@ -280,6 +281,7 @@ function Portfolio() {
 
   return (
     <>
+      <Preloader />
       <div id="top"></div>
       <section
         className="container mx-auto px-5"
@@ -307,7 +309,7 @@ function Portfolio() {
               <div className="flex items-center">
                 <Link
                   className="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
-                  to="/DIZETO-REACT/LIST"
+                  to="/DIZETO-REACT/list"
                 >
                   <BsArrowLeft className="mx-auto my-1" />
                 </Link>
@@ -315,22 +317,22 @@ function Portfolio() {
                   const pageNumber = index + 1;
                   if (pageNumber === currentPage) {
                     return (
-                      <span
+                      <button
                         key={pageNumber}
-                        className="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold bg-red-600 text-white"
+                        className="button-no-page mr-5 border-2 border-red-600 font-semibold bg-red-600 text-white"
                       >
                         {pageNumber}
-                      </span>
+                      </button>
                     );
                   } else {
                     return (
-                      <span
+                      <button
                         key={pageNumber}
                         onClick={() => setCurrentPage(pageNumber)}
-                        class="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
+                        className="button-no-page mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
                       >
                         {pageNumber}
-                      </span>
+                      </button>
                     );
                   }
                 })}
@@ -346,7 +348,7 @@ function Portfolio() {
           <div className="flex items-center">
             <Link
               className="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
-              to="/DIZETO-REACT/LIST"
+              to="/DIZETO-REACT/list"
             >
               <BsArrowLeft className="mx-auto my-1" />
             </Link>
@@ -354,31 +356,34 @@ function Portfolio() {
               const pageNumber = index + 1;
               if (pageNumber === currentPage) {
                 return (
-                  <span
+                  <button
                     key={pageNumber}
-                    className="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold bg-red-600 text-white"
+                    className="button-no-page mr-5 border-2 border-red-600 font-semibold bg-red-600 text-white"
                   >
                     {pageNumber}
-                  </span>
+                  </button>
                 );
               } else {
                 return (
-                  <span
+                  <button
                     key={pageNumber}
                     onClick={() => setCurrentPage(pageNumber)}
-                    class="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
+                    className="button-no-page mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
                   >
                     {pageNumber}
-                  </span>
+                  </button>
                 );
               }
             })}
           </div>
         </div>
         <div>
-          <ul className={link[index].cls} gap-4>
+          <ul className={`${link[index].cls} gap-4`}>
             {currentData.map((data) => (
-              <li className="mb-4 border-2 bg-white border-gray-100 hover:border-red-600">
+              <li
+                key={data}
+                className="mb-4 border-2 bg-white border-gray-100 hover:border-red-600"
+              >
                 <div className="p-1">
                   <a
                     href={require(`../assets/uploads/${link[index].fldr}/${data}`)}
@@ -396,16 +401,17 @@ function Portfolio() {
           </ul>
         </div>
         <div className="flex justify-center">
-          <Scroll
-            to="top"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={1000}
-            className="scroll my-6 py-2 px-10 border-2 border-red-600 text-red-600 font-semibold hover:bg-red-600 hover:text-white"
-          >
-            BACK TO TOP
-          </Scroll>
+          <button className="scroll my-6 py-2 px-10 border-2 border-red-600 text-red-600 font-semibold hover:bg-red-600 hover:text-white">
+            <Scroll
+              to="top"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+            >
+              BACK TO TOP
+            </Scroll>
+          </button>
         </div>
       </section>
       <Footer />
