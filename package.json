@@ -1,6 +1,6 @@
 {
-  "homepage": "https://gdwmw.github.io/DIZETO-REACT",
-  "name": "dzt",
+  "name": "dizeto",
+  "homepage": "https://gdwmw.github.io/DIZETO-REACT/DASHBOARD",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

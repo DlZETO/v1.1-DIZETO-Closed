@@ -48,7 +48,7 @@ function Merge() {
             >
               <img
                 style={{ width: "35px", height: "35px" }}
-                src="asset/images/logo/dizeto.svg"
+                src={require("/src/assets/images/logo/dizeto.svg").default}
                 alt="Dizeto Navbar"
               />
             </Link>
@@ -173,7 +173,7 @@ function Merge() {
               </p>
             </div>
             <div className="logo-about-img my-8 md:my-auto mx-auto">
-              <img src="asset/images/logo/dizeto.svg" alt="Dizeto About" />
+              <img src={require("/src/assets/images/logo/dizeto.svg").default} alt="Dizeto About" />
             </div>
           </div>
         </div>

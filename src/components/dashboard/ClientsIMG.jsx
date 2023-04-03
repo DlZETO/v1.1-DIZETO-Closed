@@ -17,7 +17,7 @@ function ClientsIMG() {
           >
             <img
               className="img-client opacity-70 hover:opacity-100"
-              src="asset/images/client/ma.png"
+              src={require("/src/assets/images/client/ma.png").default}
               alt="Muhibah Angklung"
             />
           </a>
@@ -29,7 +29,7 @@ function ClientsIMG() {
           >
             <img
               className="img-client opacity-70 hover:opacity-100"
-              src="asset/images/client/rbw.png"
+              src={require("/src/assets/images/client/rbw.png").default}
               alt="Rumah Batik Wijaya"
             />
           </a>
@@ -41,7 +41,7 @@ function ClientsIMG() {
           >
             <img
               className="img-client opacity-70 hover:opacity-100"
-              src="asset/images/client/irma.png"
+              src={require("/src/assets/images/client/irma.png").default}
               alt="Ikatan Remaja Masjid Jawa Barat"
             />
           </a>
@@ -55,7 +55,7 @@ function ClientsIMG() {
           >
             <img
               className="img-client opacity-70 hover:opacity-100"
-              src="asset/images/client/kp.png"
+              src={require("/src/assets/images/client/kp.png").default}
               alt="Kopi Purnama"
             />
           </a>
@@ -67,7 +67,7 @@ function ClientsIMG() {
           >
             <img
               className="img-client opacity-70 hover:opacity-100"
-              src="asset/images/client/lc.png"
+              src={require("/src/assets/images/client/lc.png").default}
               alt="Lentera Coffee"
             />
           </a>
@@ -79,7 +79,7 @@ function ClientsIMG() {
           >
             <img
               className="img-client opacity-70 hover:opacity-100"
-              src="asset/images/client/sk.png"
+              src={require("/src/assets/images/client/sk.png").default}
               alt="Safiy Kitchen"
             />
           </a>
@@ -91,7 +91,7 @@ function ClientsIMG() {
           >
             <img
               className="img-client opacity-70 hover:opacity-100"
-              src="asset/images/client/aa.png"
+              src={require("/src/assets/images/client/aa.png").default}
               alt="Al-'Ashr Al-Madani"
             />
           </a>
