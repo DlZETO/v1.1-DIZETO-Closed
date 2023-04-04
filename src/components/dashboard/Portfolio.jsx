@@ -27,7 +27,7 @@ function Portfolio() {
       <div className="flex justify-center">
         <Link
           className="my-4 py-2 px-10 border-2 border-red-600 text-red-600 font-semibold hover:bg-red-600 hover:text-white"
-          to="/DIZETO-REACT/list"
+          to="/list"
         >
           CHECK ALL PORTFOLIO
         </Link>

@@ -185,7 +185,7 @@ function ListPortfolio() {
             >
               <Link
                 className="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
-                to="/DIZETO-REACT"
+                to="/"
               >
                 <BsArrowLeft className="mx-auto my-1" />
               </Link>
@@ -244,7 +244,7 @@ function ListPortfolio() {
                   <div className="flex justify-center">
                     <Link
                       className="mb-4 mt-1 py-2 px-10 border-2 border-red-600 text-red-600 font-semibold hover:bg-red-600 hover:text-white"
-                      to={`/DIZETO-REACT/list/${item.link}`}
+                      to={`/list/${item.link}`}
                     >
                       OPEN
                     </Link>

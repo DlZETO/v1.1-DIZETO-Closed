@@ -11,24 +11,24 @@ import Footer from "../components/Footer";
 
 function Portfolio() {
   const pathIndex = {
-    "/DIZETO-REACT/list/sec01": 0,
-    "/DIZETO-REACT/list/sec02": 1,
-    "/DIZETO-REACT/list/sec03": 2,
-    "/DIZETO-REACT/list/sec04": 3,
-    "/DIZETO-REACT/list/sec05": 4,
-    "/DIZETO-REACT/list/sec06": 5,
-    "/DIZETO-REACT/list/sec07": 6,
-    "/DIZETO-REACT/list/sec08": 7,
-    "/DIZETO-REACT/list/sec09": 8,
-    "/DIZETO-REACT/list/sec10": 9,
-    "/DIZETO-REACT/list/sec11": 10,
-    "/DIZETO-REACT/list/sec12": 11,
-    "/DIZETO-REACT/list/sec13": 12,
-    "/DIZETO-REACT/list/sec14": 13,
-    "/DIZETO-REACT/list/sec15": 14,
-    "/DIZETO-REACT/list/sec16": 15,
-    "/DIZETO-REACT/list/sec17": 16,
-    "/DIZETO-REACT/list/sec18": 17,
+    "/list/sec01": 0,
+    "/list/sec02": 1,
+    "/list/sec03": 2,
+    "/list/sec04": 3,
+    "/list/sec05": 4,
+    "/list/sec06": 5,
+    "/list/sec07": 6,
+    "/list/sec08": 7,
+    "/list/sec09": 8,
+    "/list/sec10": 9,
+    "/list/sec11": 10,
+    "/list/sec12": 11,
+    "/list/sec13": 12,
+    "/list/sec14": 13,
+    "/list/sec15": 14,
+    "/list/sec16": 15,
+    "/list/sec17": 16,
+    "/list/sec18": 17,
   };
 
   const index = pathIndex[window.location.pathname] || 0;
@@ -310,7 +310,7 @@ function Portfolio() {
               <div className="flex items-center">
                 <Link
                   className="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
-                  to="/DIZETO-REACT/list"
+                  to="/list"
                 >
                   <BsArrowLeft className="mx-auto my-1" />
                 </Link>
@@ -349,7 +349,7 @@ function Portfolio() {
           <div className="flex items-center">
             <Link
               className="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
-              to="/DIZETO-REACT/list"
+              to="/list"
             >
               <BsArrowLeft className="mx-auto my-1" />
             </Link>

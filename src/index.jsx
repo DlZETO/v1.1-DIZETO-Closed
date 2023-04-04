@@ -25,83 +25,83 @@ import Sec18 from "./pages/Sec18";
 
 const router = createBrowserRouter([
   {
-    path: "/DIZETO-REACT",
+    path: "/",
     element: <App />,
   },
   {
-    path: "/DIZETO-REACT/list",
+    path: "/list",
     element: <ListPortfolio />,
   },
   {
-    path: "/DIZETO-REACT/list/sec01",
+    path: "/list/sec01",
     element: <Sec01 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec02",
+    path: "/list/sec02",
     element: <Sec02 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec03",
+    path: "/list/sec03",
     element: <Sec03 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec04",
+    path: "/list/sec04",
     element: <Sec04 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec05",
+    path: "/list/sec05",
     element: <Sec05 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec06",
+    path: "/list/sec06",
     element: <Sec06 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec07",
+    path: "/list/sec07",
     element: <Sec07 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec08",
+    path: "/list/sec08",
     element: <Sec08 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec09",
+    path: "/list/sec09",
     element: <Sec09 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec10",
+    path: "/list/sec10",
     element: <Sec10 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec11",
+    path: "/list/sec11",
     element: <Sec11 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec12",
+    path: "/list/sec12",
     element: <Sec12 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec13",
+    path: "/list/sec13",
     element: <Sec13 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec14",
+    path: "/list/sec14",
     element: <Sec14 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec15",
+    path: "/list/sec15",
     element: <Sec15 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec16",
+    path: "/list/sec16",
     element: <Sec16 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec17",
+    path: "/list/sec17",
     element: <Sec17 />,
   },
   {
-    path: "/DIZETO-REACT/list/sec18",
+    path: "/list/sec18",
     element: <Sec18 />,
   },
 ]);
