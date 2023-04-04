@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "myRoboto";
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+body {
+  font-family: "myRoboto";
+}
+
 #preloader {
   position: fixed;
   top: 0;
