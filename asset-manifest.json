@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DIZETO-REACT/static/css/main.ce8311f9.css",
-    "main.js": "/DIZETO-REACT/static/js/main.35b9c4b0.js",
+    "main.js": "/DIZETO-REACT/static/js/main.280311b3.js",
     "static/js/787.7ca0cfe2.chunk.js": "/DIZETO-REACT/static/js/787.7ca0cfe2.chunk.js",
     "static/media/DZT_CC41.jpg": "/DIZETO-REACT/static/media/DZT_CC41.a996a5cca6af44d62840.jpg",
     "static/media/DZT_CC69.jpg": "/DIZETO-REACT/static/media/DZT_CC69.034eec6d797881f42479.jpg",
@@ -238,11 +238,11 @@
     "static/media/dizeto.svg": "/DIZETO-REACT/static/media/dizeto.ae2f44e00dabe236fa26008f1993efa9.svg",
     "index.html": "/DIZETO-REACT/index.html",
     "main.ce8311f9.css.map": "/DIZETO-REACT/static/css/main.ce8311f9.css.map",
-    "main.35b9c4b0.js.map": "/DIZETO-REACT/static/js/main.35b9c4b0.js.map",
+    "main.280311b3.js.map": "/DIZETO-REACT/static/js/main.280311b3.js.map",
     "787.7ca0cfe2.chunk.js.map": "/DIZETO-REACT/static/js/787.7ca0cfe2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce8311f9.css",
-    "static/js/main.35b9c4b0.js"
+    "static/js/main.280311b3.js"
   ]
 }
