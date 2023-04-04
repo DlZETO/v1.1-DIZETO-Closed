@@ -14,108 +14,126 @@ function ListPortfolio() {
       image: "ginzas-birthday/thumbnail/thumbnail.jpg",
       title: "GINZA'S BIRTHDAY",
       category: "(DOCUMENTATION)",
+      link: "sec01",
     },
     {
       id: 2,
       image: "halim-prewedding/thumbnail/thumbnail.jpg",
       title: "HALIM",
       category: "(PRE-WEDDING)",
+      link: "sec02",
     },
     {
       id: 3,
       image: "ichas-birthday/thumbnail/thumbnail.jpg",
       title: "ICHA'S BIRTHDAY",
       category: "(DOCUMENTATION)",
+      link: "sec03",
     },
     {
       id: 4,
       image: "lentera-coffee/thumbnail/thumbnail.jpg",
       title: "LENTERA COFFEE",
       category: "(PRODUCT)",
+      link: "sec04",
     },
     {
       id: 5,
       image: "macaire/thumbnail/thumbnail.jpg",
       title: "MACAIRE",
       category: "(PRODUCT)",
+      link: "sec05",
     },
     {
       id: 6,
       image: "mitas-birthday/thumbnail/thumbnail.jpg",
       title: "MITA'S BIRTHDAY",
       category: "(DOCUMENTATION)",
+      link: "sec06",
     },
     {
       id: 7,
       image: "nazla-clothes/thumbnail/thumbnail.jpg",
       title: "NAZLA CLOTHES",
       category: "(PHOTO SHOOT)",
+      link: "sec07",
     },
     {
       id: 8,
       image: "faizal-graduation/thumbnail/thumbnail.jpg",
       title: "FAIZAL GRADUATION",
       category: "(DOCUMENTATION)",
+      link: "sec08",
     },
     {
       id: 9,
       image: "reni-prewedding/thumbnail/thumbnail.jpg",
       title: "RENI",
       category: "(PRE-WEDDING)",
+      link: "sec09",
     },
     {
       id: 10,
       image: "rosita-prewedding/thumbnail/thumbnail.jpg",
       title: "ROSITA",
       category: "(PRE-WEDDING)",
+      link: "sec10",
     },
     {
       id: 11,
       image: "sely-hunting/thumbnail/thumbnail.jpg",
       title: "SELY",
       category: "(HUNTING)",
+      link: "sec11",
     },
     {
       id: 12,
       image: "tenang-coffee/thumbnail/thumbnail.jpg",
       title: "TENANG COFFEE",
       category: "(PRODUCT)",
+      link: "sec12",
     },
     {
       id: 13,
       image: "irma-jabar/thumbnail/thumbnail.jpg",
       title: "IRMA JABAR",
       category: "(DOCUMENTATION)",
+      link: "sec13",
     },
     {
       id: 14,
       image: "muhibah-angklung/thumbnail/thumbnail.jpg",
       title: "MUHIBAH ANGKLUNG",
       category: "(DOCUMENTATION)",
+      link: "sec14",
     },
     {
       id: 15,
       image: "aya-music-cover/thumbnail/thumbnail.jpg",
       title: "AYA",
       category: "(MUSIC COVER)",
+      link: "sec15",
     },
     {
       id: 16,
       image: "hkbp-bandung/thumbnail/thumbnail.jpg",
       title: "HKBP BANDUNG",
       category: "(DOCUMENTATION)",
+      link: "sec16",
     },
     {
       id: 17,
       image: "safiy-kitchen/thumbnail/thumbnail.jpg",
       title: "SAFIY KITCHEN",
       category: "(CONTENT)",
+      link: "sec17",
     },
     {
       id: 18,
       image: "rumah-batik-wijaya/thumbnail/thumbnail.jpg",
       title: "RUMAH BATIK WIJAYA",
       category: "(PRODUCT)",
+      link: "sec18",
     },
   ];
 
@@ -226,7 +244,7 @@ function ListPortfolio() {
                   <div className="flex justify-center">
                     <Link
                       className="mb-4 mt-1 py-2 px-10 border-2 border-red-600 text-red-600 font-semibold hover:bg-red-600 hover:text-white"
-                      to="/DIZETO-REACT/list/sec01"
+                      to={`/DIZETO-REACT/list/${item.link}`}
                     >
                       OPEN
                     </Link>
