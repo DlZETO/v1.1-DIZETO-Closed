@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.72c1f738.css",
+    "main.css": "/static/css/main.c43ca6b1.css",
     "main.js": "/static/js/main.9cae7cb0.js",
     "static/js/787.7ca0cfe2.chunk.js": "/static/js/787.7ca0cfe2.chunk.js",
     "static/media/DZT_CC41.jpg": "/static/media/DZT_CC41.a996a5cca6af44d62840.jpg",
@@ -227,6 +227,7 @@
     "static/media/loading.gif": "/static/media/loading.6faed9db624ef890d69f.gif",
     "static/media/page-loading.gif": "/static/media/page-loading.6faed9db624ef890d69f.gif",
     "static/media/thumbnail.jpg": "/static/media/thumbnail.cdc8b7b46281f3714f43.jpg",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/background.jpg": "/static/media/background.147fab57f965bdfb0c3d.jpg",
     "static/media/kp.png": "/static/media/kp.cbb247a14c21dc44dbfd.png",
     "static/media/aa.png": "/static/media/aa.29014057c02ad5234e8e.png",
@@ -237,12 +238,12 @@
     "static/media/ma.png": "/static/media/ma.2873556eff4670333974.png",
     "static/media/dizeto.svg": "/static/media/dizeto.ae2f44e00dabe236fa26008f1993efa9.svg",
     "index.html": "/index.html",
-    "main.72c1f738.css.map": "/static/css/main.72c1f738.css.map",
+    "main.c43ca6b1.css.map": "/static/css/main.c43ca6b1.css.map",
     "main.9cae7cb0.js.map": "/static/js/main.9cae7cb0.js.map",
     "787.7ca0cfe2.chunk.js.map": "/static/js/787.7ca0cfe2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72c1f738.css",
+    "static/css/main.c43ca6b1.css",
     "static/js/main.9cae7cb0.js"
   ]
 }
