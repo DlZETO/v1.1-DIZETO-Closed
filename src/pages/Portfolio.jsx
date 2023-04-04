@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Link as Scroll } from "react-scroll";
 import { BsArrowLeft } from "react-icons/bs";
 import Preloader from "../components/Preloader";
-import IMGFallback from "../components/IMGFallback";
+import ImageFallback from "../components/ImageFallback";
 import "../css/tailwind.css";
 import "../css/style.css";
 import "../css/lightbox.min.css";
@@ -391,7 +391,7 @@ function Portfolio() {
                     data-lightbox={link[index].alt}
                     data-title={link[index].cc}
                   >
-                    <IMGFallback
+                    <ImageFallback
                       src={require(`../assets/uploads/${link[index].fldr}/thumbnail/${data}`)}
                       alt={link[index].alt}
                     />

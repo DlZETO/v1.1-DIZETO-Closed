@@ -8,7 +8,7 @@ import Portfolio from "./components/dashboard/Portfolio";
 import Pricing from "./components/dashboard/Pricing";
 import Testimony from "./components/dashboard/Testimony";
 import Clients from "./components/dashboard/Clients";
-import ClientsIMG from "./components/dashboard/ClientsIMG";
+import ClientsImage from "./components/dashboard/ClientsImage";
 import Contact from "./components/dashboard/Contact";
 import Footer from "./components/Footer";
 
@@ -31,7 +31,7 @@ function Dashboard() {
       <section className="bg-img-testimony bg-scroll">
         <Testimony />
         <Clients />
-        <ClientsIMG />
+        <ClientsImage />
       </section>
       <Contact />
       <Footer />
