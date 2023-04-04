@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import IMGFallback from "../IMGFallback";
 
 function Portfolio() {
   const photos = [
@@ -44,7 +45,7 @@ function Portfolio() {
                   data-lightbox="dashboart"
                   data-title="&copy; Copyright 2022 - DIZETO"
                 >
-                  <img
+                  <IMGFallback
                     className="rounded-sm"
                     src={require(`../../assets/uploads/dashboard/f1/thumbnail/${photo}`)}
                     alt={photo}
