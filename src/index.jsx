@@ -4,24 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
 import ListPortfolio from "./pages/ListPortfolio";
-import Sec01 from "./pages/Sec01";
-import Sec02 from "./pages/Sec02";
-import Sec03 from "./pages/Sec03";
-import Sec04 from "./pages/Sec04";
-import Sec05 from "./pages/Sec05";
-import Sec06 from "./pages/Sec06";
-import Sec07 from "./pages/Sec07";
-import Sec08 from "./pages/Sec08";
-import Sec09 from "./pages/Sec09";
-import Sec10 from "./pages/Sec10";
-import Sec11 from "./pages/Sec11";
-import Sec12 from "./pages/Sec12";
-import Sec13 from "./pages/Sec13";
-import Sec14 from "./pages/Sec14";
-import Sec15 from "./pages/Sec15";
-import Sec16 from "./pages/Sec16";
-import Sec17 from "./pages/Sec17";
-import Sec18 from "./pages/Sec18";
+import Portfolio from "./pages/Portfolio";
 
 const router = createBrowserRouter([
   {
@@ -33,76 +16,76 @@ const router = createBrowserRouter([
     element: <ListPortfolio />,
   },
   {
-    path: "/list/sec01",
-    element: <Sec01 />,
+    path: "/list/section/01",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec02",
-    element: <Sec02 />,
+    path: "/list/section/02",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec03",
-    element: <Sec03 />,
+    path: "/list/section/03",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec04",
-    element: <Sec04 />,
+    path: "/list/section/04",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec05",
-    element: <Sec05 />,
+    path: "/list/section/05",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec06",
-    element: <Sec06 />,
+    path: "/list/section/06",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec07",
-    element: <Sec07 />,
+    path: "/list/section/07",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec08",
-    element: <Sec08 />,
+    path: "/list/section/08",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec09",
-    element: <Sec09 />,
+    path: "/list/section/09",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec10",
-    element: <Sec10 />,
+    path: "/list/section/10",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec11",
-    element: <Sec11 />,
+    path: "/list/section/11",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec12",
-    element: <Sec12 />,
+    path: "/list/section/12",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec13",
-    element: <Sec13 />,
+    path: "/list/section/13",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec14",
-    element: <Sec14 />,
+    path: "/list/section/14",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec15",
-    element: <Sec15 />,
+    path: "/list/section/15",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec16",
-    element: <Sec16 />,
+    path: "/list/section/16",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec17",
-    element: <Sec17 />,
+    path: "/list/section/17",
+    element: <Portfolio />,
   },
   {
-    path: "/list/sec18",
-    element: <Sec18 />,
+    path: "/list/section/18",
+    element: <Portfolio />,
   },
 ]);
 
