@@ -47,7 +47,7 @@ function Clients() {
             className="flex justify-center text-2xl"
             style={{ width: "250px" }}
           >
-            <p className="text-red-600 font-semibold pb-1">
+            <p className="flex items-center text-red-600 font-semibold pb-1">
               <DateTime />
             </p>
           </div>
