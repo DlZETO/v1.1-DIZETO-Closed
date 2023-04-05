@@ -294,22 +294,22 @@ function Portfolio() {
             style={{ minWidth: "max-content" }}
           >
             <div className="mr-5 lg:mr-0">
-              <h3 className="font-semibold text-4xl">
+              <h3 className="text-4xl font-semibold">
                 {link[index].tit2}
                 <span className="text-red-600">{link[index].tit3}</span>
               </h3>
-              <p className="block font-semibold text-base text-right tracking-widest">
+              <p className="block text-right text-base font-semibold tracking-widest">
                 {link[index].dt}
               </p>
             </div>
 
             <div
-              className="pl-20 hidden lg:block"
+              className="hidden pl-20 lg:block"
               style={{ width: "max-content" }}
             >
               <div className="flex items-center">
                 <Link
-                  className="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
+                  className="button-no-page mr-5 border-2 border-red-600 pt-1 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
                   to="/list"
                 >
                   <BsArrowLeft className="mx-auto my-1" />
@@ -320,7 +320,7 @@ function Portfolio() {
                     return (
                       <button
                         key={pageNumber}
-                        className="button-no-page mr-5 border-2 border-red-600 font-semibold bg-red-600 text-white"
+                        className="button-no-page mr-5 border-2 border-red-600 bg-red-600 font-semibold text-white"
                       >
                         {pageNumber}
                       </button>
@@ -348,7 +348,7 @@ function Portfolio() {
         >
           <div className="flex items-center">
             <Link
-              className="button-no-page pt-1 mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
+              className="button-no-page mr-5 border-2 border-red-600 pt-1 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
               to="/list"
             >
               <BsArrowLeft className="mx-auto my-1" />
@@ -359,7 +359,7 @@ function Portfolio() {
                 return (
                   <button
                     key={pageNumber}
-                    className="button-no-page mr-5 border-2 border-red-600 font-semibold bg-red-600 text-white"
+                    className="button-no-page mr-5 border-2 border-red-600 bg-red-600 font-semibold text-white"
                   >
                     {pageNumber}
                   </button>
@@ -383,7 +383,7 @@ function Portfolio() {
             {currentData.map((data) => (
               <li
                 key={data}
-                className="mb-4 border-2 bg-white border-gray-100 hover:border-red-600"
+                className="mb-4 border-2 border-gray-100 bg-white hover:border-red-600"
               >
                 <div className="p-1">
                   <a
@@ -402,7 +402,7 @@ function Portfolio() {
           </ul>
         </div>
         <div className="flex justify-center">
-          <button className="scroll my-6 py-2 px-10 border-2 border-red-600 text-red-600 font-semibold hover:bg-red-600 hover:text-white">
+          <button className="scroll my-6 border-2 border-red-600 px-10 py-2 font-semibold text-red-600 hover:bg-red-600 hover:text-white">
             <Scroll
               to="top"
               spy={true}
