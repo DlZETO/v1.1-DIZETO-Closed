@@ -8,7 +8,7 @@ import Jumbotron from "./components/dashboard/Jumbotron";
 import About from "./components/dashboard/about/Index";
 import Portfolio from "./components/dashboard/portfolio/Index";
 import Pricing from "./components/dashboard/pricing/Index";
-import Testimony from "./components/dashboard/Testimony";
+import Testimony from "./components/dashboard/testimony/Index";
 import Clients from "./components/dashboard/Clients";
 import ClientsImage from "./components/dashboard/ClientsImage";
 import Contact from "./components/dashboard/Contact";
