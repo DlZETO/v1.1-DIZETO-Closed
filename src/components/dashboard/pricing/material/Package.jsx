@@ -11,7 +11,7 @@ export default function Package({ pack, ttl, lst }) {
         {ttl}
       </li>
       {lst}
-      <li className="pb-5 text-base">
+      <li className="mb-5 text-base">
         SENT VIA
         <br />
         GOOGLE DRIVE

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Content() {
   return (
-    <div className="container mx-auto flex max-h-fit items-center justify-center px-5 pb-20 pt-5">
+    <div className="flex max-h-fit items-center justify-center pt-5">
       <div className="grid grid-cols-1 font-medium md:grid-cols-2">
         <div>
           <h4 className="text-2xl font-semibold transition-all duration-500 dark:text-white">

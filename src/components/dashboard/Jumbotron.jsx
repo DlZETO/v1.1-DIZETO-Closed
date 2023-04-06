@@ -1,6 +1,6 @@
 import React from "react";
 
-function Jumbotron() {
+export default function Jumbotron() {
   return (
     <section id="jumbotron" className="flex h-[500px] flex-col items-center justify-center text-center">
       <h1 className="text-8xl font-semibold transition-all duration-500 dark:text-white">
@@ -10,5 +10,3 @@ function Jumbotron() {
     </section>
   );
 }
-
-export default Jumbotron;
