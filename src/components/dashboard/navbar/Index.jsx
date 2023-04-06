@@ -32,25 +32,23 @@ export default function Index() {
   }, [scrollPosition]);
 
   return (
-    <nav id="navbar" className="fixed top-0 z-10 w-full transition-all duration-500 dark:text-white">
-      <div className="flex items-center px-10 py-2">
-        <Scroll className="cursor-pointer" to="jumbotron" spy={true} smooth={true} offset={-63} duration={500}>
-          <img className="pb-1.5" src={require("../../../assets/images/logo/dizeto.svg").default} alt="Dizeto Navbar" height={36} width={36} />
-        </Scroll>
+    <nav id="navbar" className="fixed top-0 z-10 flex h-[63px] w-full items-center px-10 transition-all duration-500 dark:text-white">
+      <Scroll className="flex h-9 w-9 cursor-pointer items-center justify-center" to="jumbotron" spy={true} smooth={true} offset={-63} duration={500}>
+        <img src={require("../../../assets/images/logo/dizeto.svg").default} alt="Dizeto Navbar" height={33} width={33} />
+      </Scroll>
 
-        <div className="mx-auto">
-          <ul className="flex flex-row gap-x-8 text-base font-semibold">
-            <NavLink value="About" to="about" />
-            <NavLink value="Portfolio" to="portfolio" />
-            <NavLink value="Pricing" to="pricing" />
-            <NavLink value="Testimony" to="testimony" />
-            <NavLink value="Clients" to="clients" />
-            <NavLink cls="hidden md:block" value="Contact" to="contact" />
-          </ul>
-        </div>
-
-        <NavMode />
+      <div className="mx-auto">
+        <ul className="flex flex-row gap-x-8 text-base font-semibold">
+          <NavLink value="About" to="about" />
+          <NavLink value="Portfolio" to="portfolio" />
+          <NavLink value="Pricing" to="pricing" />
+          <NavLink value="Testimony" to="testimony" />
+          <NavLink value="Clients" to="clients" />
+          <NavLink cls="hidden md:block" value="Contact" to="contact" />
+        </ul>
       </div>
+
+      <NavMode />
     </nav>
   );
 }

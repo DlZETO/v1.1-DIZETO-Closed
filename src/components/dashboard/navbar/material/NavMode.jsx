@@ -38,9 +38,9 @@ export default function NavMode() {
   }
 
   return (
-    <div className="h-9 w-9 cursor-pointer rounded-full border-2 border-white/0 transition-all duration-250 dark:text-white" onClick={mode}>
-      <BsFillSunFill className="mx-auto mt-2 block transition-all duration-500 dark:hidden" />
-      <BsFillMoonFill className="mx-auto mt-2 hidden transition-all duration-500 dark:block" />
+    <div className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border-2 border-white/0 transition-all duration-250 dark:text-white" onClick={mode}>
+      <BsFillSunFill className="block transition-all duration-500 dark:hidden" />
+      <BsFillMoonFill className="hidden transition-all duration-500 dark:block" />
     </div>
   );
 }

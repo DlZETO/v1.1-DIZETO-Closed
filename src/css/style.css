@@ -69,19 +69,6 @@ body {
   column-count: 3;
 }
 
-.red-circle {
-  position: relative;
-  margin-top: -63px;
-  top: -10px;
-  display: inline-block;
-  width: 130px;
-  height: 130px;
-  color: white;
-  background-image: -webkit-linear-gradient(90deg, #e73131 0%, #e73131 100%);
-  border-radius: 100px;
-  border: 5px solid rgb(243 244 246);
-}
-
 .active {
   color: rgb(220 38 38);
 }
