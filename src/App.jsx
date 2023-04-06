@@ -3,9 +3,11 @@ import Preloader from "./components/Preloader";
 import "./css/tailwind.css";
 import "./css/style.css";
 import "./css/lightbox.min.css";
-import Merge from "./components/dashboard/Merge";
-import Portfolio from "./components/dashboard/Portfolio";
-import Pricing from "./components/dashboard/Pricing";
+import Navbar from "./components/dashboard/navbar/Index";
+import Jumbotron from "./components/dashboard/Jumbotron";
+import About from "./components/dashboard/about/Index";
+import Portfolio from "./components/dashboard/portfolio/Index";
+import Pricing from "./components/dashboard/pricing/Index";
 import Testimony from "./components/dashboard/Testimony";
 import Clients from "./components/dashboard/Clients";
 import ClientsImage from "./components/dashboard/ClientsImage";
@@ -36,7 +38,9 @@ function Dashboard() {
   return (
     <>
       <Preloader />
-      <Merge />
+      <Navbar />
+      <Jumbotron />
+      <About />
       <Portfolio />
       <Pricing />
       <section id="bgtestimony" className="bg-img-testimony bg-scroll">

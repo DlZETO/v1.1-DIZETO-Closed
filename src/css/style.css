@@ -61,16 +61,6 @@ body {
   top: 0;
 }
 
-.logo-about-img {
-  height: auto;
-  max-width: 250px;
-  width: 35%;
-}
-
-.dashboart-colum {
-  column-count: 2;
-}
-
 .portfolio-colum {
   column-count: 3;
 }
@@ -170,12 +160,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .logo-about-img {
-    padding-top: 32px;
-    height: auto;
-    width: 250px;
-  }
-
   .footer-text-size {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -187,10 +171,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .dashboart-colum {
-    column-count: 3;
-  }
-
   .portfolio-colum {
     column-count: 5;
   }
