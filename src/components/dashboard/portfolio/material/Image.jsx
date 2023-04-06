@@ -18,7 +18,7 @@ export default function Image() {
   ];
 
   return (
-    <ul className="grid grid-cols-3 gap-3 lg:grid-cols-4">
+    <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
       {photos.map((photo, index) => (
         <li id="imgborder" key={index} className="rounded-sm border-2 border-gray-100 hover:border-red-600 dark:border-gray-700 dark:hover:border-red-600">
           <div className="p-1">
