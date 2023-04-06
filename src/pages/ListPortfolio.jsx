@@ -151,40 +151,35 @@ function ListPortfolio() {
   const currentData = myData.slice(startIndex, endIndex);
 
   useEffect(() => {
+    const html = document.querySelector("html");
     const body = document.querySelector("body");
     body.classList.add("bg-img-portfolio");
+    if (html.className === "dark") {
+      body.setAttribute("style", "background-image: url(./background-dark.jpg);");
+    } else {
+      body.setAttribute("style", "background-image: url(./background.jpg);");
+    }
 
     return () => {
       body.classList.remove("bg-img-portfolio");
+      body.removeAttribute("style");
     };
   }, []);
-
   return (
     <>
       <Preloader />
-      <section
-        className="container mx-auto px-5"
-        style={{ minHeight: "100vh" }}
-      >
+      <section className="container mx-auto px-5" style={{ minHeight: "100vh" }}>
         <div className="flex items-center py-10">
-          <div
-            className="flex items-center"
-            style={{ minWidth: "max-content" }}
-          >
+          <div className="flex items-center" style={{ minWidth: "max-content" }}>
             <div>
-              <h1 className="text-4xl font-semibold">
+              <h1 className="text-4xl font-semibold dark:text-white">
                 PORTFOL<span className="text-red-600">IO</span>
               </h1>
-              <p className="block text-right text-base font-semibold tracking-widest">
-                - DIZETO -
-              </p>
+              <p className="block text-right text-base font-semibold tracking-widest dark:text-white">- DIZETO -</p>
             </div>
-            <div
-              className="flex items-center pl-20"
-              style={{ width: "max-content" }}
-            >
+            <div className="flex items-center pl-20" style={{ width: "max-content" }}>
               <Link
-                className="button-no-page mr-5 border-2 border-red-600 pt-1 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
+                className="button-no-page mr-5 border-2 border-red-600 pt-1 font-semibold text-red-600 hover:bg-red-600 hover:text-white dark:border-white dark:bg-white dark:hover:border-red-600 dark:hover:bg-red-600"
                 to="/"
               >
                 <BsArrowLeft className="mx-auto my-1" />
@@ -193,10 +188,7 @@ function ListPortfolio() {
                 const pageNumber = index + 1;
                 if (pageNumber === currentPage) {
                   return (
-                    <button
-                      key={pageNumber}
-                      className="button-no-page mr-5 border-2 border-red-600 bg-red-600 font-semibold text-white"
-                    >
+                    <button key={pageNumber} className="button-no-page mr-5 border-2 border-red-600 bg-red-600 font-semibold text-white">
                       {pageNumber}
                     </button>
                   );
@@ -204,7 +196,7 @@ function ListPortfolio() {
                   return (
                     <button
                       key={pageNumber}
-                      className="button-no-page mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
+                      className="button-no-page mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white dark:border-white dark:bg-white dark:hover:border-red-600 dark:hover:bg-red-600"
                       onClick={() => setCurrentPage(pageNumber)}
                     >
                       {pageNumber}
@@ -218,34 +210,22 @@ function ListPortfolio() {
         </div>
         <div>
           <ul className="c-grid-cols grid gap-5 pb-10">
-            {/* Menampilkan data pada halaman aktif */}
             {currentData.map((item) => (
               <li key={item.id}>
                 <div
-                  className="rounded-md border border-gray-100 bg-white hover:border-red-600"
+                  className="rounded-md border border-gray-100 bg-white hover:border-red-600 dark:border-gray-700 dark:bg-dark dark:hover:border-red-600"
                   style={{ width: "100%", height: "max-content" }}
                 >
                   <div className="canvas m-2">
-                    <img
-                      className="scale-image rounded-md"
-                      src={require(`../assets/uploads/${item.image}`)}
-                      alt={item.title}
-                    />
+                    <img className="scale-image rounded-md" src={require(`../assets/uploads/${item.image}`)} alt={item.title} />
                   </div>
                   <div className="red-line-h"></div>
                   <div>
-                    <h3 className="px-2 text-center text-lg font-semibold sm:text-base lg:text-lg">
-                      {item.title}
-                    </h3>
-                    <h4 className="pb-2 text-center text-sm font-semibold sm:text-xs lg:text-sm">
-                      {item.category}
-                    </h4>
+                    <h3 className="px-2 text-center text-lg font-semibold dark:text-white sm:text-base lg:text-lg">{item.title}</h3>
+                    <h4 className="pb-2 text-center text-sm font-semibold dark:text-white sm:text-xs lg:text-sm">{item.category}</h4>
                   </div>
                   <div className="flex justify-center">
-                    <Link
-                      className="mb-4 mt-1 border-2 border-red-600 px-10 py-2 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
-                      to={`/list/section/${item.link}`}
-                    >
+                    <Link className="mb-4 mt-1 border-2 border-red-600 px-10 py-2 font-semibold text-red-600 hover:bg-red-600 hover:text-white" to={`/list/section/${item.link}`}>
                       OPEN
                     </Link>
                   </div>

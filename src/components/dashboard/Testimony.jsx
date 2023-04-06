@@ -32,7 +32,7 @@ function Testimony() {
   }, [index]);
 
   return (
-    <section id="testimony">
+    <section className="transition-all duration-500 dark:text-white" id="testimony">
       <div className="container mx-auto px-5">
         <div className="pt-12">
           <i className="text-5xl">
@@ -41,87 +41,56 @@ function Testimony() {
         </div>
         <div className="tmslider block">
           <div className="flex items-center justify-center py-5">
-            <img
-              src={require("../../assets/images/testimony/person.jpg")}
-              className="w-32 rounded-full"
-              alt="Testimony"
-            />
+            <img src={require("../../assets/images/testimony/person.jpg")} className="w-32 rounded-full" alt="Testimony" />
           </div>
           <div className="text-center">
             <strong className="text-lg">Name</strong>
-            <p className="text-sm font-semibold text-gray-700">Status</p>
-            <p className="text-base font-semibold pt-4">"Comment"</p>
+            <p className="text-sm font-semibold text-gray-700 transition-all duration-500 dark:text-white">Status</p>
+            <p className="pt-4 text-base font-semibold">"Comment"</p>
           </div>
         </div>
         <div className="tmslider hidden">
           <div className="flex items-center justify-center py-5">
-            <img
-              src={require("../../assets/images/testimony/person.jpg")}
-              className="w-32 rounded-full"
-              alt="Testimony"
-            />
+            <img src={require("../../assets/images/testimony/person.jpg")} className="w-32 rounded-full" alt="Testimony" />
           </div>
           <div className="text-center">
             <strong className="text-lg">Name</strong>
-            <p className="text-sm font-semibold text-gray-700">Status</p>
-            <p className="text-base font-semibold pt-4">"Comment"</p>
+            <p className="text-sm font-semibold text-gray-700 transition-all duration-500 dark:text-white">Status</p>
+            <p className="pt-4 text-base font-semibold">"Comment"</p>
           </div>
         </div>
         <div className="tmslider hidden">
           <div className="flex items-center justify-center py-5">
-            <img
-              src={require("../../assets/images/testimony/person.jpg")}
-              className="w-32 rounded-full"
-              alt="Testimony"
-            />
+            <img src={require("../../assets/images/testimony/person.jpg")} className="w-32 rounded-full" alt="Testimony" />
           </div>
           <div className="text-center">
             <strong className="text-lg">Name</strong>
-            <p className="text-sm font-semibold text-gray-700">Status</p>
-            <p className="text-base font-semibold pt-4">"Comment"</p>
+            <p className="text-sm font-semibold text-gray-700 transition-all duration-500 dark:text-white">Status</p>
+            <p className="pt-4 text-base font-semibold">"Comment"</p>
           </div>
         </div>
         <div className="tmslider hidden">
           <div className="flex items-center justify-center py-5">
-            <img
-              src={require("../../assets/images/testimony/person.jpg")}
-              className="w-32 rounded-full"
-              alt="Testimony"
-            />
+            <img src={require("../../assets/images/testimony/person.jpg")} className="w-32 rounded-full" alt="Testimony" />
           </div>
           <div className="text-center">
             <strong className="text-lg">Name</strong>
-            <p className="text-sm font-semibold text-gray-700">Status</p>
-            <p className="text-base font-semibold pt-4">"Comment"</p>
+            <p className="text-sm font-semibold text-gray-700 transition-all duration-500 dark:text-white">Status</p>
+            <p className="pt-4 text-base font-semibold">"Comment"</p>
           </div>
         </div>
         <div className="flex items-center justify-center">
           <i>
-            <BsFillCircleFill
-              className="icon-dot text-red-600/30 active mt-10 mb-16"
-              size={"12px"}
-            />
+            <BsFillCircleFill className="icon-dot active mb-16 mt-10 text-red-600/30" size={"12px"} />
           </i>
           <i>
-            <BsFillCircleFill
-              className="icon-dot text-red-600/30 mt-10 mb-16"
-              style={{ marginLeft: "15px" }}
-              size={"12px"}
-            />
+            <BsFillCircleFill className="icon-dot mb-16 mt-10 text-red-600/30" style={{ marginLeft: "15px" }} size={"12px"} />
           </i>
           <i>
-            <BsFillCircleFill
-              className="icon-dot text-red-600/30 mt-10 mb-16"
-              style={{ marginLeft: "15px" }}
-              size={"12px"}
-            />
+            <BsFillCircleFill className="icon-dot mb-16 mt-10 text-red-600/30" style={{ marginLeft: "15px" }} size={"12px"} />
           </i>
           <i>
-            <BsFillCircleFill
-              className="icon-dot text-red-600/30 mt-10 mb-16"
-              style={{ marginLeft: "15px" }}
-              size={"12px"}
-            />
+            <BsFillCircleFill className="icon-dot mb-16 mt-10 text-red-600/30" style={{ marginLeft: "15px" }} size={"12px"} />
           </i>
         </div>
       </div>

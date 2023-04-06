@@ -13,7 +13,7 @@ function Preloader() {
 
   return (
     loading && (
-      <div id="preloader">
+      <div className="bg-white dark:bg-dark" id="preloader">
         <img src={require("../assets/page-loading.gif")} alt="Preloader" />
       </div>
     )

@@ -4,8 +4,8 @@ import { TbWorldWww } from "react-icons/tb";
 
 function Contact() {
   return (
-    <section id="contact" className="bg-white pb-9">
-      <h3 className="pt-2 md:pt-5 font-semibold text-4xl text-center">
+    <section id="contact" className="bg-white pb-9 transition-all duration-500 dark:bg-dark">
+      <h3 className="pt-2 text-center text-4xl font-semibold transition-all duration-500 dark:text-white md:pt-5">
         CONTA<span className="text-red-600">CT</span>
       </h3>
       <div className="red-line-h"></div>
@@ -20,20 +20,14 @@ function Contact() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-        <ul className="pt-8 text-base">
+        <ul className="pt-8 text-base transition-all duration-500 dark:text-white">
           <li className="flex">
             <i style={{ marginLeft: 3, marginRight: 10, marginTop: 5 }}>
               <FaMapMarkerAlt />
             </i>
             <strong>Address:</strong>
-            <a
-              className="hover:text-red-600 ml-2"
-              href="https://goo.gl/maps/p92HMz8wHBQKFnKd9"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Blk. A-B No.a8, Cibeunying, Kec. Cimenyan, Kabupaten Bandung, Jawa
-              Barat 40191, Indonesia
+            <a className="ml-2 hover:text-red-600" href="https://goo.gl/maps/p92HMz8wHBQKFnKd9" target="_blank" rel="noreferrer">
+              Blk. A-B No.a8, Cibeunying, Kec. Cimenyan, Kabupaten Bandung, Jawa Barat 40191, Indonesia
             </a>
           </li>
           <li className="flex pt-2">
@@ -41,12 +35,7 @@ function Contact() {
               <FaEnvelope />
             </i>
             <strong>Email:</strong>
-            <a
-              className="hover:text-red-600 ml-2"
-              href="https://mail.google.com/mail/u/?authuser=dizetobs@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a className="ml-2 hover:text-red-600" href="https://mail.google.com/mail/u/?authuser=dizetobs@gmail.com" target="_blank" rel="noreferrer">
               dizetobs@gmail.com
             </a>
           </li>
@@ -55,12 +44,7 @@ function Contact() {
               <FaPhoneAlt />
             </i>
             <strong>Phone:</strong>
-            <a
-              className="hover:text-red-600 ml-2"
-              href="https://wa.link/vnm99c"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a className="ml-2 hover:text-red-600" href="https://wa.link/vnm99c" target="_blank" rel="noreferrer">
               +62 821-1959-6508
             </a>
           </li>
@@ -69,12 +53,7 @@ function Contact() {
               <TbWorldWww />
             </i>
             <strong>Website:</strong>
-            <a
-              className="hover:text-red-600 ml-2"
-              href="https://www.dizeto.com"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a className="ml-2 hover:text-red-600" href="https://www.dizeto.com" target="_blank" rel="noreferrer">
               https://www.dizeto.com/
             </a>
           </li>

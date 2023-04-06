@@ -272,44 +272,39 @@ function Portfolio() {
   const currentData = myData.slice(startIndex, endIndex);
 
   useEffect(() => {
+    const html = document.querySelector("html");
     const body = document.querySelector("body");
     body.classList.add("bg-img-portfolio");
+    if (html.className === "dark") {
+      body.setAttribute("style", "background-image: url(/background-dark.jpg);");
+    } else {
+      body.setAttribute("style", "background-image: url(/background.jpg);");
+    }
 
     return () => {
       body.classList.remove("bg-img-portfolio");
+      body.removeAttribute("style");
     };
   }, []);
-
   return (
     <>
       <Preloader />
       <div id="top"></div>
-      <section
-        className="container mx-auto px-5"
-        style={{ minHeight: "100vh" }}
-      >
+      <section className="container mx-auto px-5" style={{ minHeight: "100vh" }}>
         <div className="flex items-center pt-10 lg:py-10">
-          <div
-            className="flex items-center"
-            style={{ minWidth: "max-content" }}
-          >
+          <div className="flex items-center" style={{ minWidth: "max-content" }}>
             <div className="mr-5 lg:mr-0">
-              <h3 className="text-4xl font-semibold">
+              <h3 className="text-4xl font-semibold dark:text-white">
                 {link[index].tit2}
                 <span className="text-red-600">{link[index].tit3}</span>
               </h3>
-              <p className="block text-right text-base font-semibold tracking-widest">
-                {link[index].dt}
-              </p>
+              <p className="block text-right text-base font-semibold tracking-widest dark:text-white">{link[index].dt}</p>
             </div>
 
-            <div
-              className="hidden pl-20 lg:block"
-              style={{ width: "max-content" }}
-            >
+            <div className="hidden pl-20 lg:block" style={{ width: "max-content" }}>
               <div className="flex items-center">
                 <Link
-                  className="button-no-page mr-5 border-2 border-red-600 pt-1 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
+                  className="button-no-page mr-5 border-2 border-red-600 pt-1 font-semibold text-red-600 hover:bg-red-600 hover:text-white dark:border-white dark:bg-white dark:hover:border-red-600 dark:hover:bg-red-600"
                   to="/list"
                 >
                   <BsArrowLeft className="mx-auto my-1" />
@@ -318,10 +313,7 @@ function Portfolio() {
                   const pageNumber = index + 1;
                   if (pageNumber === currentPage) {
                     return (
-                      <button
-                        key={pageNumber}
-                        className="button-no-page mr-5 border-2 border-red-600 bg-red-600 font-semibold text-white"
-                      >
+                      <button key={pageNumber} className="button-no-page mr-5 border-2 border-red-600 bg-red-600 font-semibold text-white">
                         {pageNumber}
                       </button>
                     );
@@ -330,7 +322,7 @@ function Portfolio() {
                       <button
                         key={pageNumber}
                         onClick={() => setCurrentPage(pageNumber)}
-                        className="button-no-page mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
+                        className="button-no-page font-semibolddark:border-white mr-5 border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white dark:border-white dark:bg-white dark:hover:border-red-600 dark:hover:bg-red-600"
                       >
                         {pageNumber}
                       </button>
@@ -342,25 +334,16 @@ function Portfolio() {
           </div>
           <div className="red-line-h-portfolio"></div>
         </div>
-        <div
-          className="mx-auto block py-6 lg:hidden"
-          style={{ width: "max-content" }}
-        >
+        <div className="mx-auto block py-6 lg:hidden" style={{ width: "max-content" }}>
           <div className="flex items-center">
-            <Link
-              className="button-no-page mr-5 border-2 border-red-600 pt-1 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
-              to="/list"
-            >
+            <Link className="button-no-page mr-5 border-2 border-red-600 pt-1 font-semibold text-red-600 hover:bg-red-600 hover:text-white" to="/list">
               <BsArrowLeft className="mx-auto my-1" />
             </Link>
             {Array.from({ length: totalPages }).map((_, index) => {
               const pageNumber = index + 1;
               if (pageNumber === currentPage) {
                 return (
-                  <button
-                    key={pageNumber}
-                    className="button-no-page mr-5 border-2 border-red-600 bg-red-600 font-semibold text-white"
-                  >
+                  <button key={pageNumber} className="button-no-page mr-5 border-2 border-red-600 bg-red-600 font-semibold text-white">
                     {pageNumber}
                   </button>
                 );
@@ -381,20 +364,10 @@ function Portfolio() {
         <div>
           <ul className={`${link[index].cls} gap-4`}>
             {currentData.map((data) => (
-              <li
-                key={data}
-                className="mb-4 border-2 border-gray-100 bg-white hover:border-red-600"
-              >
-                <div className="p-1">
-                  <a
-                    href={require(`../assets/uploads/${link[index].fldr}/${data}`)}
-                    data-lightbox={link[index].alt}
-                    data-title={link[index].cc}
-                  >
-                    <ImageFallback
-                      src={require(`../assets/uploads/${link[index].fldr}/thumbnail/${data}`)}
-                      alt={link[index].alt}
-                    />
+              <li key={data} className="mb-4 border-2 border-gray-100 bg-white hover:border-red-600 dark:border-gray-700 dark:bg-gray-700 dark:hover:border-red-600">
+                <div>
+                  <a href={require(`../assets/uploads/${link[index].fldr}/${data}`)} data-lightbox={link[index].alt} data-title={link[index].cc}>
+                    <ImageFallback src={require(`../assets/uploads/${link[index].fldr}/thumbnail/${data}`)} alt={link[index].alt} />
                   </a>
                 </div>
               </li>
@@ -403,13 +376,7 @@ function Portfolio() {
         </div>
         <div className="flex justify-center">
           <button className="scroll my-6 border-2 border-red-600 px-10 py-2 font-semibold text-red-600 hover:bg-red-600 hover:text-white">
-            <Scroll
-              to="top"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={1000}
-            >
+            <Scroll to="top" spy={true} smooth={true} offset={0} duration={1000}>
               BACK TO TOP
             </Scroll>
           </button>

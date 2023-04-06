@@ -14,11 +14,22 @@ import Footer from "./components/Footer";
 
 function Dashboard() {
   useEffect(() => {
+    const html = document.querySelector("html");
     const body = document.querySelector("body");
+    const bgtestimony = document.querySelector("#bgtestimony");
     body.classList.add("bg-img-dashboard");
+    if (html.className === "dark") {
+      body.setAttribute("style", "background-image: url(./background-dark.jpg);");
+      bgtestimony.setAttribute("style", "background-image: url(./background-dark.jpg);");
+    } else {
+      body.setAttribute("style", "background-image: url(./background.jpg);");
+      bgtestimony.setAttribute("style", "background-image: url(./background.jpg);");
+    }
 
     return () => {
       body.classList.remove("bg-img-dashboard");
+      body.removeAttribute("style");
+      bgtestimony.removeAttribute("style");
     };
   }, []);
 
@@ -28,7 +39,7 @@ function Dashboard() {
       <Merge />
       <Portfolio />
       <Pricing />
-      <section className="bg-img-testimony bg-scroll">
+      <section id="bgtestimony" className="bg-img-testimony bg-scroll">
         <Testimony />
         <Clients />
         <ClientsImage />

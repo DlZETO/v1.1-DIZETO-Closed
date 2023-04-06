@@ -1,10 +1,5 @@
-@font-face {
-  font-family: "myRoboto";
-  src: url(../assets/fonts/Roboto-Regular.ttf);
-}
-
 body {
-  font-family: "myRoboto";
+  font-family: sans-serif;
 }
 
 #preloader {
@@ -13,7 +8,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
   z-index: 9999;
 }
 
@@ -25,7 +19,6 @@ body {
 }
 
 .bg-img-dashboard {
-  background-image: url(/src/assets/images/background/background.jpg);
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
@@ -34,7 +27,6 @@ body {
 }
 
 .bg-img-testimony {
-  background-image: url(/src/assets/images/background/background.jpg);
   background-size: cover;
   height: auto;
   background-repeat: no-repeat;
@@ -42,7 +34,6 @@ body {
 }
 
 .bg-img-portfolio {
-  background-image: url(/src/assets/images/background/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
