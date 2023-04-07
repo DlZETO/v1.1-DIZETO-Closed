@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function Title({ ttl1, ttl2 }) {
+export default function Title({ title1, title2 }) {
   return (
     <div className="pb-5">
       <h2 className="text-xl">
-        {ttl1}
+        {title1}
         <br />
-        {ttl2}
+        {title2}
       </h2>
     </div>
   );

@@ -1,95 +1,38 @@
 import React, { useState, useEffect } from "react";
 import { BsFillCircleFill, BsQuote } from "react-icons/bs";
+import Person from "./material/Person";
+import personImage from "../../../assets/images/testimony/person.jpg";
 
 export default function Index() {
-  const [index, setIndex] = useState(0);
+  const persons = [
+    { name: "Name 1", status: "Status 1", comment: "Comment 1", source: personImage },
+    { name: "Name 2", status: "Status 2", comment: "Comment 2", source: personImage },
+    { name: "Name 3", status: "Status 3", comment: "Comment 3", source: personImage },
+    { name: "Name 4", status: "Status 4", comment: "Comment 4", source: personImage },
+  ];
+
+  const [currentPersonIndex, setCurrentPersonIndex] = useState(0);
 
   useEffect(() => {
-    const slides = document.querySelectorAll(".tmslider");
-    const dots = document.querySelectorAll(".icon-dot");
-
-    if (slides.length === 0 || dots.length === 0) {
-      console.error("Elemen tidak ditemukan!");
-      return;
-    }
-
-    const showSlide = () => {
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.opacity = 0;
-        slides[i].classList.add("hidden");
-        dots[i].classList.remove("active");
-      }
-
-      slides[index].style.opacity = 1;
-      slides[index].classList.remove("hidden");
-      dots[index].classList.add("active");
-      setIndex((index + 1) % slides.length);
-    };
-
-    const intervalId = setInterval(showSlide, 3000);
-
-    return () => clearInterval(intervalId);
-  }, [index]);
+    const interval = setInterval(() => {
+      setCurrentPersonIndex((currentPersonIndex + 1) % persons.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [currentPersonIndex, persons.length]);
 
   return (
-    <section className="transition-all duration-500 dark:text-white" id="testimony">
-      <div className="container mx-auto px-5">
-        <i className="text-5xl">
+    <section id="testimony" className="transition-all duration-500 dark:text-white">
+      <div className="container mx-auto flex h-[500px] flex-col items-center justify-center px-5">
+        <i className="mb-3 text-5xl">
           <BsQuote />
         </i>
-        <div className="tmslider block">
-          <div className="flex items-center justify-center py-5">
-            <img src={require("../../../assets/images/testimony/person.jpg")} className="w-32 rounded-full" alt="Testimony" />
-          </div>
-          <div className="text-center">
-            <strong className="text-lg">Name</strong>
-            <p className="text-sm font-semibold text-gray-700 transition-all duration-500 dark:text-white">Status</p>
-            <p className="pt-4 text-base font-semibold">"Comment"</p>
-          </div>
-        </div>
-        <div className="tmslider hidden">
-          <div className="flex items-center justify-center py-5">
-            <img src={require("../../../assets/images/testimony/person.jpg")} className="w-32 rounded-full" alt="Testimony" />
-          </div>
-          <div className="text-center">
-            <strong className="text-lg">Name</strong>
-            <p className="text-sm font-semibold text-gray-700 transition-all duration-500 dark:text-white">Status</p>
-            <p className="pt-4 text-base font-semibold">"Comment"</p>
-          </div>
-        </div>
-        <div className="tmslider hidden">
-          <div className="flex items-center justify-center py-5">
-            <img src={require("../../../assets/images/testimony/person.jpg")} className="w-32 rounded-full" alt="Testimony" />
-          </div>
-          <div className="text-center">
-            <strong className="text-lg">Name</strong>
-            <p className="text-sm font-semibold text-gray-700 transition-all duration-500 dark:text-white">Status</p>
-            <p className="pt-4 text-base font-semibold">"Comment"</p>
-          </div>
-        </div>
-        <div className="tmslider hidden">
-          <div className="flex items-center justify-center py-5">
-            <img src={require("../../../assets/images/testimony/person.jpg")} className="w-32 rounded-full" alt="Testimony" />
-          </div>
-          <div className="text-center">
-            <strong className="text-lg">Name</strong>
-            <p className="text-sm font-semibold text-gray-700 transition-all duration-500 dark:text-white">Status</p>
-            <p className="pt-4 text-base font-semibold">"Comment"</p>
-          </div>
-        </div>
-        <div className="flex items-center justify-center">
-          <i>
-            <BsFillCircleFill className="icon-dot active mb-16 mt-10 text-red-600/30" size={"12px"} />
-          </i>
-          <i>
-            <BsFillCircleFill className="icon-dot mb-16 mt-10 text-red-600/30" style={{ marginLeft: "15px" }} size={"12px"} />
-          </i>
-          <i>
-            <BsFillCircleFill className="icon-dot mb-16 mt-10 text-red-600/30" style={{ marginLeft: "15px" }} size={"12px"} />
-          </i>
-          <i>
-            <BsFillCircleFill className="icon-dot mb-16 mt-10 text-red-600/30" style={{ marginLeft: "15px" }} size={"12px"} />
-          </i>
+        <Person {...persons[currentPersonIndex]} />
+        <div className="mt-10 flex items-center justify-center">
+          {persons.map((person, index) => (
+            <i key={index}>
+              <BsFillCircleFill className={`mx-2 ${currentPersonIndex === index ? "active" : ""} text-red-600/30`} size={"12px"} />
+            </i>
+          ))}
         </div>
       </div>
     </section>
