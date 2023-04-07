@@ -29,7 +29,7 @@ export default function Loading() {
   return (
     loading && (
       <div className="bg-white dark:bg-dark" id="loading">
-        <img className="h-36 w-36" src={src} alt="loading" />
+        <img className="h-36 w-36" src={src} alt=" " />
       </div>
     )
   );
