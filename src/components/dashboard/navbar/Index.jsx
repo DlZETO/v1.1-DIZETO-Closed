@@ -24,9 +24,9 @@ export default function Index() {
 
     if (scrollPosition > 200) {
       if (scrollPosition > about.offsetTop - 64) {
-        navbar.classList.add("backdrop-blur", "drop-shadow-md", "dark:bg-dark/70", "dark:drop-shadow-md-white");
+        navbar.classList.add("backdrop-blur", "drop-shadow-md-black", "dark:bg-dark/70", "dark:drop-shadow-md-white");
       } else {
-        navbar.classList.remove("backdrop-blur", "drop-shadow-md", "dark:bg-dark/70", "dark:drop-shadow-md-white");
+        navbar.classList.remove("backdrop-blur", "drop-shadow-md-black", "dark:bg-dark/70", "dark:drop-shadow-md-white");
       }
     }
   }, [scrollPosition]);

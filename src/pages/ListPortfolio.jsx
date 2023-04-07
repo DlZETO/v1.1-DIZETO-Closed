@@ -3,11 +3,12 @@ import "../css/style.css";
 import "../css/lightbox.min.css";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { BsArrowLeft } from "react-icons/bs";
 import Loading from "../components/Loading";
+import PaginationFirst from "../components/PaginationFirst";
+import PaginationSecond from "../components/PaginationSecond";
 import Footer from "../components/Footer";
 
-function ListPortfolio() {
+export default function ListPortfolio() {
   const myData = [
     {
       id: 1,
@@ -138,16 +139,10 @@ function ListPortfolio() {
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
-  const perPage = 21;
-
-  // Menghitung jumlah total halaman
+  const perPage = 20;
   const totalPages = Math.ceil(myData.length / perPage);
-
-  // Menghitung index awal dan akhir data untuk halaman yang sedang aktif
   const startIndex = (currentPage - 1) * perPage;
   const endIndex = startIndex + perPage;
-
-  // Membuat array data yang ditampilkan pada halaman aktif
   const currentData = myData.slice(startIndex, endIndex);
 
   useEffect(() => {
@@ -165,30 +160,28 @@ function ListPortfolio() {
       body.removeAttribute("style");
     };
   }, []);
+
   return (
     <>
       <Loading />
-      <section className="container mx-auto px-5" style={{ minHeight: "100vh" }}>
-        <div className="flex items-center py-10">
-          <div className="flex items-center" style={{ minWidth: "max-content" }}>
-            <div>
+      <section className="container mx-auto mb-10 min-h-screen px-5">
+        <div className="flex items-center pt-10 lg:py-10">
+          <div className="flex min-w-max items-center">
+            {/* ----------------------------------- */}
+            <div className="mr-5 lg:mr-20">
               <h1 className="text-4xl font-semibold dark:text-white">
                 PORTFOL<span className="text-red-600">IO</span>
               </h1>
-              <p className="block text-right text-base font-semibold tracking-widest dark:text-white">- DIZETO -</p>
+              <p className="text-right text-base font-semibold tracking-widest dark:text-white">- DIZETO -</p>
             </div>
-            <div className="flex items-center pl-20" style={{ width: "max-content" }}>
-              <Link
-                className="button-no-page mr-5 border-2 border-red-600 pt-1 font-semibold text-red-600 hover:bg-red-600 hover:text-white dark:border-white dark:bg-white dark:hover:border-red-600 dark:hover:bg-red-600"
-                to="/"
-              >
-                <BsArrowLeft className="mx-auto my-1" />
-              </Link>
-              {Array.from({ length: totalPages }).map((_, index) => {
+            {/* ----------------------------------- */}
+            <PaginationFirst
+              back="/"
+              value={Array.from({ length: totalPages }).map((_, index) => {
                 const pageNumber = index + 1;
                 if (pageNumber === currentPage) {
                   return (
-                    <button key={pageNumber} className="button-no-page mr-5 border-2 border-red-600 bg-red-600 font-semibold text-white">
+                    <button key={pageNumber} className="flex h-[35px] w-[35px] items-center justify-center border-2 border-red-600 bg-red-600 font-semibold text-white">
                       {pageNumber}
                     </button>
                   );
@@ -196,7 +189,7 @@ function ListPortfolio() {
                   return (
                     <button
                       key={pageNumber}
-                      className="button-no-page mr-5 border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white dark:border-white dark:bg-white dark:hover:border-red-600 dark:hover:bg-red-600"
+                      className="flex h-[35px] w-[35px] items-center justify-center border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
                       onClick={() => setCurrentPage(pageNumber)}
                     >
                       {pageNumber}
@@ -204,40 +197,58 @@ function ListPortfolio() {
                   );
                 }
               })}
-            </div>
+            />
           </div>
           <div className="red-line-h-portfolio"></div>
         </div>
-        <div>
-          <ul className="c-grid-cols grid gap-5 pb-10">
-            {currentData.map((item) => (
-              <li key={item.id}>
-                <div
-                  className="rounded-md border border-gray-100 bg-white hover:border-red-600 dark:border-gray-700 dark:bg-dark dark:hover:border-red-600"
-                  style={{ width: "100%", height: "max-content" }}
+        {/* ----------------------------------- */}
+        <PaginationSecond
+          back="/"
+          value={Array.from({ length: totalPages }).map((_, index) => {
+            const pageNumber = index + 1;
+            if (pageNumber === currentPage) {
+              return (
+                <button key={pageNumber} className="flex h-[35px] w-[35px] items-center justify-center border-2 border-red-600 bg-red-600 font-semibold text-white">
+                  {pageNumber}
+                </button>
+              );
+            } else {
+              return (
+                <button
+                  key={pageNumber}
+                  className="flex h-[35px] w-[35px] items-center justify-center border-2 border-red-600 font-semibold text-red-600 hover:bg-red-600 hover:text-white"
+                  onClick={() => setCurrentPage(pageNumber)}
                 >
-                  <div className="canvas m-2">
-                    <img className="scale-image rounded-md" src={require(`../assets/uploads/${item.image}`)} alt={item.title} />
+                  {pageNumber}
+                </button>
+              );
+            }
+          })}
+        />
+        {/* ----------------------------------- */}
+        <div>
+          <ul className="grid grid-cols-2 gap-5 md:grid-cols-3 xl:grid-cols-5">
+            {currentData.map((item) => (
+              <li className="transition-all duration-500 hover:drop-shadow-md-black dark:hover:drop-shadow-md-white" key={item.id}>
+                <Link to={`/list/section/${item.link}`}>
+                  <div className="rounded-md border border-gray-300 bg-white hover:border-red-600 dark:border-gray-700 dark:bg-dark dark:hover:border-red-600">
+                    <div className="m-2">
+                      <img className="rounded-md" src={require(`../assets/uploads/${item.image}`)} alt={item.title} />
+                    </div>
+                    <div className="red-line-h"></div>
+                    <div>
+                      <h3 className="mx-2 text-center text-lg font-semibold dark:text-white sm:text-base lg:text-lg">{item.title}</h3>
+                      <h4 className="mb-2 text-center text-sm font-semibold dark:text-white sm:text-xs lg:text-sm">{item.category}</h4>
+                    </div>
                   </div>
-                  <div className="red-line-h"></div>
-                  <div>
-                    <h3 className="px-2 text-center text-lg font-semibold dark:text-white sm:text-base lg:text-lg">{item.title}</h3>
-                    <h4 className="pb-2 text-center text-sm font-semibold dark:text-white sm:text-xs lg:text-sm">{item.category}</h4>
-                  </div>
-                  <div className="flex justify-center">
-                    <Link className="mb-4 mt-1 border-2 border-red-600 px-10 py-2 font-semibold text-red-600 hover:bg-red-600 hover:text-white" to={`/list/section/${item.link}`}>
-                      OPEN
-                    </Link>
-                  </div>
-                </div>
+                </Link>
               </li>
             ))}
           </ul>
         </div>
+        {/* ----------------------------------- */}
       </section>
       <Footer />
     </>
   );
 }
-
-export default ListPortfolio;
