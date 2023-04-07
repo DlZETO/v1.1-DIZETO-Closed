@@ -2,7 +2,7 @@ import React from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
 
-function Contact() {
+export default function Contact() {
   return (
     <section id="contact" className="bg-white pb-20 transition-all duration-500 dark:bg-dark">
       <div className="container mx-auto px-5">
@@ -64,5 +64,3 @@ function Contact() {
     </section>
   );
 }
-
-export default Contact;

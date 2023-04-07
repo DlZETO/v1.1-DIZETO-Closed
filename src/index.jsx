@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
-import App from "./App";
+import Dashboard from "./pages/Dashboard";
 import ListPortfolio from "./pages/ListPortfolio";
 import Portfolio from "./pages/Portfolio";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Dashboard />,
   },
   {
     path: "/list",
