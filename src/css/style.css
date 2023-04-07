@@ -1,0 +1,144 @@
+body {
+  font-family: sans-serif;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+#loading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-img-dashboard {
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.bg-img-testimony {
+  background-size: cover;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-img-portfolio {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.red-line-h {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #dc2626;
+  margin-top: 0.25rem;
+  width: 100px;
+  height: 2px;
+}
+
+.red-line-h-portfolio {
+  background-color: #dc2626;
+  width: 100%;
+  height: 2px;
+}
+
+.grey-line-v {
+  border-left: 2px solid grey;
+  height: 60px;
+  left: 50%;
+  top: 0;
+}
+
+.portfolio-colum {
+  column-count: 3;
+}
+
+.c-portfolio-colum {
+  column-count: 3;
+}
+
+.active {
+  color: rgb(220 38 38);
+}
+
+.scale-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.canvas {
+  width: 92%;
+  padding-bottom: 92%;
+  position: relative;
+}
+
+.canvas img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button-no-page {
+  text-align: center;
+  display: block;
+  height: 35px;
+  width: 35px;
+}
+
+.c-grid-cols {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .c-grid-cols {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .c-grid-cols {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-colum {
+    column-count: 5;
+  }
+
+  .c-portfolio-colum {
+    column-count: 4;
+  }
+
+  .c-grid-cols {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .c-grid-cols {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1536px) {
+  .c-grid-cols {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+}
