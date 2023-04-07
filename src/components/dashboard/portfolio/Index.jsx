@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <section id="portfolio" className="bg-white pb-20 transition-all duration-500 dark:bg-dark">
       <div className="container mx-auto px-5">
-        <h3 className="text-center text-4xl font-semibold transition-all duration-500 dark:text-white">
+        <h3 className="pt-5 text-center text-4xl font-semibold transition-all duration-500 dark:text-white">
           PORTFOL<span className="text-red-600">IO</span>
         </h3>
 

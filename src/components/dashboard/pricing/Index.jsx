@@ -146,7 +146,7 @@ export default function Index() {
   return (
     <section id="pricing" className="bg-white pb-20 transition-all duration-500 dark:bg-dark">
       <div className="container mx-auto px-5">
-        <h3 className="pt-5 text-center text-4xl font-semibold transition-all duration-500 dark:text-white md:pt-5">
+        <h3 className="pt-5 text-center text-4xl font-semibold transition-all duration-500 dark:text-white">
           PRICI<span className="text-red-600">NG</span>
         </h3>
         <div className="red-line-h"></div>

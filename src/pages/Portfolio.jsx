@@ -1,12 +1,12 @@
+import "../css/tailwind.css";
+import "../css/style.css";
+import "../css/lightbox.min.css";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Link as Scroll } from "react-scroll";
 import { BsArrowLeft } from "react-icons/bs";
-import Preloader from "../components/Preloader";
+import Loading from "../components/Loading";
 import ImageFallback from "../components/ImageFallback";
-import "../css/tailwind.css";
-import "../css/style.css";
-import "../css/lightbox.min.css";
 import Footer from "../components/Footer";
 
 function Portfolio() {
@@ -288,7 +288,7 @@ function Portfolio() {
   }, []);
   return (
     <>
-      <Preloader />
+      <Loading />
       <div id="top"></div>
       <section className="container mx-auto px-5" style={{ minHeight: "100vh" }}>
         <div className="flex items-center pt-10 lg:py-10">

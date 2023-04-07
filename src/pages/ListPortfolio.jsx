@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { BsArrowLeft } from "react-icons/bs";
-import Preloader from "../components/Preloader";
 import "../css/tailwind.css";
 import "../css/style.css";
 import "../css/lightbox.min.css";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { BsArrowLeft } from "react-icons/bs";
+import Loading from "../components/Loading";
 import Footer from "../components/Footer";
 
 function ListPortfolio() {
@@ -167,7 +167,7 @@ function ListPortfolio() {
   }, []);
   return (
     <>
-      <Preloader />
+      <Loading />
       <section className="container mx-auto px-5" style={{ minHeight: "100vh" }}>
         <div className="flex items-center py-10">
           <div className="flex items-center" style={{ minWidth: "max-content" }}>

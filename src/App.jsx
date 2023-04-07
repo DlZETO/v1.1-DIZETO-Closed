@@ -1,15 +1,15 @@
-import { useEffect } from "react";
-import Preloader from "./components/Preloader";
 import "./css/tailwind.css";
 import "./css/style.css";
 import "./css/lightbox.min.css";
+import { useEffect } from "react";
+import Loading from "./components/Loading";
 import Navbar from "./components/dashboard/navbar/Index";
 import Jumbotron from "./components/dashboard/Jumbotron";
 import About from "./components/dashboard/about/Index";
 import Portfolio from "./components/dashboard/portfolio/Index";
 import Pricing from "./components/dashboard/pricing/Index";
 import Testimony from "./components/dashboard/testimony/Index";
-import Clients from "./components/dashboard/Clients";
+import Clients from "./components/dashboard/clients/Index";
 import ClientsImage from "./components/dashboard/ClientsImage";
 import Contact from "./components/dashboard/Contact";
 import Footer from "./components/Footer";
@@ -37,7 +37,7 @@ function Dashboard() {
 
   return (
     <>
-      <Preloader />
+      <Loading />
       <Navbar />
       <Jumbotron />
       <About />

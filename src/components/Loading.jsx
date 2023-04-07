@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function Preloader() {
+export default function Loading() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -13,11 +13,9 @@ function Preloader() {
 
   return (
     loading && (
-      <div className="bg-white dark:bg-dark" id="preloader">
-        <img src={require("../assets/page-loading.gif")} alt="Preloader" />
+      <div className="bg-white dark:bg-dark" id="loading">
+        <img src={require("../assets/page-loading.gif")} alt="loading" />
       </div>
     )
   );
 }
-
-export default Preloader;

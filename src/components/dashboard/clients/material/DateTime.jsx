@@ -32,7 +32,16 @@ const DateTime = () => {
 
   return (
     <>
-      <span>{date}</span> - <span>{time}</span>
+      <div className="mx-auto hidden md:block">
+        <div className="mb-1 flex w-[250px] justify-center">
+          <p className="flex items-center text-2xl font-semibold text-red-600">
+            <span className="mr-1">{date}</span>-<span className="ml-1">{time}</span>
+          </p>
+        </div>
+        <div className="text-center">
+          <strong>Date - Time</strong>
+        </div>
+      </div>
     </>
   );
 };
