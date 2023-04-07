@@ -1,6 +1,6 @@
-import "./css/tailwind.css";
-import "./css/style.css";
-import "./css/lightbox.min.css";
+import "../css/tailwind.css";
+import "../css/style.css";
+import "../css/lightbox.min.css";
 import { useEffect } from "react";
 import Loading from "../components/Loading";
 import Navbar from "../components/dashboard/navbar/Index";
