@@ -10,7 +10,7 @@ export default function Contact() {
           CONTA<span className="text-red-600">CT</span>
         </h3>
 
-        <div className="red-line-h"></div>
+        <div className="red-line-h mb-5"></div>
 
         <iframe
           title="Google Maps"
