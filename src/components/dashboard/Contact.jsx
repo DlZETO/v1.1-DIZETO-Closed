@@ -15,7 +15,7 @@ export default function Contact() {
         <iframe
           title="Google Maps"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.035880336206!2d107.6482381153243!3d-6.8863057692995255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e76a1e6f56f3%3A0x8649ff7558d15108!2sDIZETO!5e0!3m2!1sid!2sid!4v1676677774416!5m2!1sid!2sid"
-          className="h-[500px] w-[100%] rounded-sm border-0 pt-5"
+          className="mt-5 h-[500px] w-[100%] rounded-sm border-0"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
 
